@@ -303,4 +303,25 @@ i{
     }
 }
 
+/* hide some nav elements in smaller screens */
 
+@media (max-width: 1450px){
+    #dis1{
+        display: none;
+    }
+}
+@media (max-width: 1300px){
+    #dis2{
+        display: none;
+    }
+}
+@media (max-width: 1200px){
+    #dis3{
+        display: none;
+    }
+}
+@media (max-width: 1088px){
+    #dis4{
+        display: none;
+    }
+}

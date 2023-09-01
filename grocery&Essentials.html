@@ -6,16 +6,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./bootstrap-5.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/all.min.css">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="styles.css">
 
-    <title>essentails</title>
+    <title>Essentails</title>
 </head>
 
 <body>
+    <div id="sideNav" onclick="hideSideNav()" class="nav-side">
+        <div class="item">
+            <img class="logo"
+                src="https://static.vecteezy.com/system/resources/previews/022/100/282/original/walmart-logo-transparent-free-png.png" />
+            <h2>Hi, User</h2>
+        </div>
+        <div class="items">
+
+
+            <a href="#" class="walmart item">
+                <img class="logo"
+                    src="https://i5.walmartimages.com/dfw/63fd9f59-ac39/29c6759d-7f14-49fa-bd3a-b870eb4fb8fb/v1/wplus-icon-blue.svg" />
+                <p>Walmart +</p>
+            </a>
+            <hr>
+            <a href="#" class="item">
+                <i class="fa-solid fa-receipt"></i>
+                <p>Purchase History</p>
+            </a>
+            <a href="#" class="item" style="margin-left: -5px;">
+                <i class="fa-solid fa-file-import"></i>
+                <p>
+
+                    My items
+                </p>
+            </a>
+            <a href="#" class="item">
+                <i class="fa-regular fa-user"></i>
+                <p>
+
+                    Account
+                </p>
+            </a>
+            <hr />
+            <a href="#" class="item">
+                <i class="fa-regular fa-circle-question"></i>
+                <p>
+
+                    Help
+                </p>
+            </a>
+            <hr />
+            <a href="#" class="item">
+                <i class="fa-regular fa-heart"></i>
+                <p>
+
+                    Lists
+                </p>
+            </a>
+            <a href="#" class="item">
+                <i class="fa-solid fa-gift"></i>
+                <p>
+
+                    Registries
+                </p>
+            </a>
+            <hr />
+            <div class="nav-list">
+                <div href="#" class="item">
+                    <i class="fa-solid fa-square-poll-horizontal"></i>
+                    <p>
+                        Departments
+                    </p>
+                </div>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="nav-list">
+                <div href="#" class="item">
+                    <i class="fa-solid fa-hand-holding-medical"></i>
+                    <p>
+                        Services
+                    </p>
+                </div>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <hr>
+            <a href="#" class="item">
+                <i class="fa-regular fa-comment"></i>
+                <p>
+                    Give feedback
+                </p>
+            </a>
+            <hr>
+            <a href="#" class="item">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <p>
+                    Sign out
+                </p>
+            </a>
+        </div>
+    </div>
+    <div id="backDrop" onclick="hideSideNav()">
+
+    </div>
     <header>
         <div class="main-nav">
-            <div class="show-md ">
-
+            <div class="show-md" onclick="showSideNav()">
                 <i class="fa-solid fa-bars " style="color: white; font-size: 25px; cursor: pointer;"></i>
             </div>
 
@@ -78,11 +171,11 @@
             <nav class="hide-md">
                 <ul>
                     <li><a href="#">Deals</a></li>
-                    <li><a href="#">Grocery & Essentials</a></li>
-                    <li><a href="#">Back to School</a></li>
+                    <li id="dis1"><a href="#">Grocery & Essentials</a></li>
+                    <li id="dis4"><a href="#">Back to School</a></li>
                     <li><a href="#">Halloween</a></li>
-                    <li><a href="#">Top Toy list</a></li>
-                    <li><a href="#">Beauty Glow up</a></li>
+                    <li id="dis2"><a href="#">Top Toy list</a></li>
+                    <li id="dis3"><a href="#">Beauty Glow up</a></li>
                     <li><a href="#">Fashion</a></li>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Registry</a></li>
@@ -91,358 +184,358 @@
             </nav>
         </div>
     </header>
-    <div class="m-5">
-        <div class="row">
-            <div class="col-12 justify-content-center">
+    <main>
+        <div class=" d-flex justify-content-center m-5">
+            <div class="col-10">
                 <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-db40/k2-_faad9df2-7dc0-41fd-86e5-cb5d9d0dcc4c.v1.jpg" class="w-100">
             </div>
         </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-6">
-                <span>Categories</span>
-                <hr>
-                <div class="dropdown">
-                    <button class="btn border border-white" type="button" id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <div class="">
-                            <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-877b/k2-_17060cce-fa02-455e-a0be-eda182b82de2.v1.jpg"
-                                class="w-25 rounded-circle">
-                            <span class="ms-1 me-3">Fresh Food</span>
-                            <i class="fa-solid fa-chevron-down ms-5"></i>
-                        </div>
-
-                    </button>
-
-                    <ul class="dropdown-menu ms-3 border border-white">
-                        <li><a class="dropdown-item" href="#">Shop All</a></li>
-                        <li><a class="dropdown-item" href="#">Fresh Produce</a></li>
-                        <li><a class="dropdown-item" href="#">Meat & Seafood</a></li>
-                        <li><a class="dropdown-item" href="#">Deil</a></li>
-                        <li><a class="dropdown-item" href="#">Dairy & Eggs</a></li>
-                        <li><a class="dropdown-item" href="#">Bakery & Bread</a></li>
-
-                    </ul>
+        <div class="m-5">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <span>Categories</span>
+                    <hr>
+                    <div class="dropdown">
+                        <button class="btn border border-white" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="">
+                                <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-877b/k2-_17060cce-fa02-455e-a0be-eda182b82de2.v1.jpg"
+                                    class="w-25 rounded-circle">
+                                <span class="ms-1 me-3">Fresh Food</span>
+                                <i class="fa-solid fa-chevron-down ms-5"></i>
+                            </div>
+    
+                        </button>
+    
+                        <ul class="dropdown-menu ms-3 border border-white">
+                            <li><a class="dropdown-item" href="#">Shop All</a></li>
+                            <li><a class="dropdown-item" href="#">Fresh Produce</a></li>
+                            <li><a class="dropdown-item" href="#">Meat & Seafood</a></li>
+                            <li><a class="dropdown-item" href="#">Deil</a></li>
+                            <li><a class="dropdown-item" href="#">Dairy & Eggs</a></li>
+                            <li><a class="dropdown-item" href="#">Bakery & Bread</a></li>
+    
+                        </ul>
+                    </div>
+    
+                    <hr>
+                    <div class="dropdown">
+                        <button class="btn border border-white" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="">
+                                <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-c6c4/k2-_c2e2e6f7-2f6e-4f2d-9351-e581fb947588.v1.jpg"
+                                    class="w-25 rounded-circle">
+                                <span class="me-2 ms-2">Pantry & Snacks</span>
+                                <i class="fa-solid fa-chevron-down ms-3"></i>
+                            </div>
+    
+                        </button>
+    
+                        <ul class="dropdown-menu ms-3 border border-white">
+                            <li><a class="dropdown-item" href="#">Snacks</a></li>
+                            <li><a class="dropdown-item" href="#">Pantry</a></li>
+                            <li><a class="dropdown-item" href="#">Breakfast & Cereal</a></li>
+                            <li><a class="dropdown-item" href="#">Candy</a></li>
+                            <li><a class="dropdown-item" href="#">Baking</a></li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="dropdown">
+                        <button class="btn border border-white" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="">
+                                <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-f754/k2-_ae5145df-fcf4-4bd2-9512-3e6078153722.v1.jpg"
+                                    class="w-25 rounded-circle">
+                                <span class="me-5 ms-2">Frezon</span>
+                                <i class="fa-solid fa-chevron-down ms-5"></i>
+                            </div>
+    
+                        </button>
+    
+                        <ul class="dropdown-menu ms-3 border border-white">
+                            <li><a class="dropdown-item" href="#">Shop All</a></li>
+                            <li><a class="dropdown-item" href="#">Frezon Breakfast</a></li>
+                            <li><a class="dropdown-item" href="#">Frezon & Deaserts</a></li>
+                            <li><a class="dropdown-item" href="#">Frezon Meals</a></li>
+                            <li><a class="dropdown-item" href="#">Frezon Appetizer & Snacks</a></li>
+                            <li><a class="dropdown-item" href="#">Frezon Pizza, pasta & Breads</a></li>
+                            <li><a class="dropdown-item" href="#">Frezon Produce</a></li>
+                            <li><a class="dropdown-item" href="#">Frezon Meat Seafood & Vegetarian</a></li>
+                            <li><a class="dropdown-item" href="#">Frezon Potatoes</a></li>
+    
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="dropdown">
+                        <button class="btn border border-white" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="">
+                                <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-2a8e/k2-_9de384d1-e00a-45db-b90e-d420ce543078.v1.jpg"
+                                    class="w-25 rounded-circle">
+                                <span class="ms-2 me-5">Beverages</span>
+                                <i class="fa-solid fa-chevron-down ms-3"></i>
+                            </div>
+    
+                        </button>
+    
+                        <ul class="dropdown-menu ms-3 border border-white">
+                            <li><a class="dropdown-item" href="#">Shop All</a></li>
+                            <li><a class="dropdown-item" href="#">Soda Pop</a></li>
+                            <li><a class="dropdown-item" href="#">Water</a></li>
+                            <li><a class="dropdown-item" href="#"> Juices</a></li>
+                            <li><a class="dropdown-item" href="#">Sports Drinks</a></li>
+                            <li><a class="dropdown-item" href="#">Enegray Drinks</a></li>
+                            <li><a class="dropdown-item" href="#">Kids'Multipack Drinks</a></li>
+                            <li><a class="dropdown-item" href="#">Drink Mixes</a></li>
+                            <li><a class="dropdown-item" href="#">Cocktail mixes</a></li>
+                            <li><a class="dropdown-item" href="#"> Alcohol</a></li>
+                            <li><a class="dropdown-item" href="#"> Coffee</a></li>
+                            <li><a class="dropdown-item" href="#"> Tea</a></li>
+                            <li><a class="dropdown-item" href="#"> Milk</a></li>
+    
+    
+    
+    
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="dropdown">
+                        <button class="btn border border-white" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="">
+                                <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-98fc/k2-_38e060ca-3233-45ff-a84d-a10538dd85cd.v1.jpg"
+                                    class="w-25 rounded-circle">
+                                <span class="ms-2 me-5"> Grab & Go</span>
+                                <i class="fa-solid fa-chevron-down ms-3"></i>
+                            </div>
+    
+                        </button>
+    
+                        <ul class="dropdown-menu ms-3 border border-white">
+                            <li><a class="dropdown-item" href="#">Sandwiches</a></li>
+                            <li><a class="dropdown-item" href="#"> Salads</a></li>
+                            <li><a class="dropdown-item" href="#">Beverages</a></li>
+                            <li><a class="dropdown-item" href="#"> Snack Bars</a></li>
+                            <li><a class="dropdown-item" href="#">Gum</a></li>
+                            <li><a class="dropdown-item" href="#">Mint</a></li>
+                            <li><a class="dropdown-item" href="#">Chips</a></li>
+                            <li><a class="dropdown-item" href="#">Jerky & Dried Meats</a></li>
+                            <li><a class="dropdown-item" href="#">Chocolate</a></li>
+                            <li><a class="dropdown-item" href="#"> Gummy Candy</a></li>
+                            <li><a class="dropdown-item" href="#"> Cookies</a></li>
+                            <li><a class="dropdown-item" href="#"> Gift Cards</a></li>
+                        </ul>
+                    </div>
+    
+                    <hr>
+                    <div class="dropdown">
+                        <button class="btn border border-white" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="">
+                                <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-9531/k2-_cb0e0b32-98a7-47b0-bb58-9138586ad9cc.v1.jpg"
+                                    class="w-25 rounded-circle">
+                                <span class=" me-3">Household Essentials</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+    
+                        </button>
+    
+                        <ul class="dropdown-menu ms-3 border border-white">
+                            <li><a class="dropdown-item" href="#">Sandwiches</a></li>
+                            <li><a class="dropdown-item" href="#"> Salads</a></li>
+                            <li><a class="dropdown-item" href="#">Beverages</a></li>
+                            <li><a class="dropdown-item" href="#"> Snack Bars</a></li>
+                            <li><a class="dropdown-item" href="#">Gum</a></li>
+                            <li><a class="dropdown-item" href="#">Mint</a></li>
+                            <li><a class="dropdown-item" href="#">Chips</a></li>
+                            <li><a class="dropdown-item" href="#">Jerky & Dried Meats</a></li>
+                            <li><a class="dropdown-item" href="#">Chocolate</a></li>
+                            <li><a class="dropdown-item" href="#"> Gummy Candy</a></li>
+                            <li><a class="dropdown-item" href="#"> Cookies</a></li>
+                            <li><a class="dropdown-item" href="#"> Gift Cards</a></li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="dropdown">
+                        <button class="btn border border-white" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="">
+                                <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-e34c/k2-_181cd831-fe71-489d-bcbe-0916f8966e0b.v1.jpg"
+                                    class="w-25 rounded-circle">
+                                <span class=" ms-2 me-2"> Health & Wellness</span>
+                                <i class="fa-solid fa-chevron-down ms-4"></i>
+                            </div>
+    
+                        </button>
+                        <ul class="dropdown-menu ms-3 border border-white">
+                            <li><a class="dropdown-item" href="#">Shop All Health</a></li>
+                            <li><a class="dropdown-item" href="#"> COVID-19 Test Kits</a></li>
+                            <li><a class="dropdown-item" href="#">Cold, Cough & Flu</a></li>
+                            <li><a class="dropdown-item" href="#">Pain Management</a></li>
+                            <li><a class="dropdown-item" href="#">Allergy, Sinus & Asthma</a></li>
+                            <li><a class="dropdown-item" href="#">Digestive Health</a></li>
+                            <li><a class="dropdown-item" href="#">First Aid</a></li>
+                            <li><a class="dropdown-item" href="#">Home Health Care</a></li>
+                            <li><a class="dropdown-item" href="#">Women's Health</a></li>
+                            <li><a class="dropdown-item" href="#"> Men's Health</a></li>
+                            <li><a class="dropdown-item" href="#"> Diabetes Management</a></li>
+                            <li><a class="dropdown-item" href="#"> Shop All Wellness</a></li>
+                            <li><a class="dropdown-item" href="#">Vitamins & Supplements</a></li>
+                            <li><a class="dropdown-item" href="#"> Protein & Supplements</a></li>
+                            <li><a class="dropdown-item" href="#"> Weight Management</a></li>
+                        </ul>
+                    </div>
+    
+                    <hr>
+                    <div class="dropdown">
+                        <button class="btn border border-white" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="">
+                                <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-59dd/k2-_0bc8ec7a-1a0a-4e84-8b92-bf3c59d33e98.v1.jpg"
+                                    class="w-25 rounded-circle">
+                                <span class="ms-2 me-5"> Personal Care</span>
+                                <i class="fa-solid fa-chevron-down ms-3"></i>
+                            </div>
+    
+                        </button>
+    
+                        <ul class="dropdown-menu ms-3 border border-white">
+                            <li><a class="dropdown-item" href="#">Shop All</a></li>
+                            <li><a class="dropdown-item" href="#"> Shop Multipacks</a></li>
+                            <li><a class="dropdown-item" href="#">Bath & Body</a></li>
+                            <li><a class="dropdown-item" href="#"> Sun Care</a></li>
+                            <li><a class="dropdown-item" href="#">Feminine Care</a></li>
+                            <li><a class="dropdown-item" href="#">Hair Care</a></li>
+                            <li><a class="dropdown-item" href="#">Oral Care</a></li>
+                            <li><a class="dropdown-item" href="#">Shaving</a></li>
+                            <li><a class="dropdown-item" href="#">Men's Grooming</a></li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="dropdown">
+                        <button class="btn border border-white" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="">
+                                <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-d11d/k2-_0df859fc-5ca2-4758-9e4e-8e6f10d18125.v1.jpg"
+                                    class="w-25 rounded-circle">
+                                <span class="ms-3 me-5">Beauty</span>
+                                <i class="fa-solid fa-chevron-down ms-5"></i>
+                            </div>
+    
+                        </button>
+    
+                        <ul class="dropdown-menu ms-3 border border-white">
+                            <li><a class="dropdown-item" href="#">Shop All</a></li>
+                            <li><a class="dropdown-item" href="#"> Premium Beauty</a></li>
+                            <li><a class="dropdown-item" href="#">Hair Care</a></li>
+                            <li><a class="dropdown-item" href="#"> Skin Care</a></li>
+                            <li><a class="dropdown-item" href="#">Fragrances</a></li>
+                            <li><a class="dropdown-item" href="#">Makeup</a></li>
+                            <li><a class="dropdown-item" href="#">Beauty Tools & Tech</a></li>
+                            <li><a class="dropdown-item" href="#">Nail Care</a></li>
+                            <li><a class="dropdown-item" href="#">Men's Grooming</a></li>
+                            <li><a class="dropdown-item" href="#">Beauty Box - Subscribe Now!</a></li>
+    
+    
+                        </ul>
+                    </div>
+    
+                    <hr>
+                    <div class="dropdown">
+                        <button class="btn border border-white" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="">
+                                <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-4df5/k2-_0a79f475-b97d-4f9a-87b7-3fbe4d874a5d.v1.jpg"
+                                    class="w-25 rounded-circle">
+                                <span class="ms-3 me-5"> Pets</span>
+                                <i class="fa-solid fa-chevron-down ms-5"></i>
+                            </div>
+    
+                        </button>
+    
+                        <ul class="dropdown-menu ms-3 border border-white">
+                            <li><a class="dropdown-item" href="#">Shop All</a></li>
+                            <li><a class="dropdown-item" href="#"> Dog</a></li>
+                            <li><a class="dropdown-item" href="#">Cat</a></li>
+                            <li><a class="dropdown-item" href="#"> Fish</a></li>
+                            <li><a class="dropdown-item" href="#">Small Animal</a></li>
+                            <li><a class="dropdown-item" href="#">Reptile</a></li>
+                            <li><a class="dropdown-item" href="#">Bird</a></li>
+                            <li><a class="dropdown-item" href="#">Horse</a></li>
+                            <li><a class="dropdown-item" href="#">Farm Animal</a></li>
+                            <li><a class="dropdown-item" href="#">Pet Care Services</a></li>
+    
+    
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="dropdown">
+                        <button class="btn border border-white" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="">
+                                <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-e81b/k2-_9e4c4cfe-405a-48ad-9500-39ba911997fc.v1.jpg"
+                                    class="w-25 rounded-circle">
+                                <span class="ms-3 me-5">Baby</span>
+                                <i class="fa-solid fa-chevron-down ms-5"></i>
+                            </div>
+    
+                        </button>
+    
+                        <ul class="dropdown-menu ms-3 border border-white">
+                            <li><a class="dropdown-item" href="#">Shop All</a></li>
+                            <li><a class="dropdown-item" href="#">EBT Eligible</a></li>
+                            <li><a class="dropdown-item" href="#">Baby Formula</a></li>
+                            <li><a class="dropdown-item" href="#"> Baby Food</a></li>
+                            <li><a class="dropdown-item" href="#">Toddler Food & Drinks</a></li>
+                            <li><a class="dropdown-item" href="#">Diapers</a></li>
+                            <li><a class="dropdown-item" href="#">Baby Wipes</a></li>
+                            <li><a class="dropdown-item" href="#">Baby Bath Care</a></li>
+                            <li><a class="dropdown-item" href="#">Baby Skin Care</a></li>
+                            <li><a class="dropdown-item" href="#">Baby Health Care</a></li>
+                            <li><a class="dropdown-item" href="#">Baby Medicine</a></li>
+                            <li><a class="dropdown-item" href="#">Gear & Activity</a></li>
+                            <li><a class="dropdown-item" href="#">Baby & Toddler Toys</a></li>
+                            <li><a class="dropdown-item" href="#">Baby & Toddler Clothing</a></li>
+                            <li><a class="dropdown-item" href="#">Baby Gift Ideas</a></li>
+                        </ul>
+                    </div>
+    
+                    <hr>
+                    <div class="dropdown">
+                        <button class="btn border border-white" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="">
+                                <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-9022/k2-_a0ae7752-69ef-4f3f-8a9a-6292478fc0ae.v1.jpg"
+                                    class="w-25 rounded-circle">
+                                <span class="ms-3 me-5">Fashion</span>
+                                <i class="fa-solid fa-chevron-down ms-5"></i>
+                            </div>
+    
+                        </button>
+    
+                        <ul class="dropdown-menu ms-3 border border-white">
+                            <li><a class="dropdown-item" href="#">Shop All</a></li>
+                            <li><a class="dropdown-item" href="#">Women</a></li>
+                            <li><a class="dropdown-item" href="#">Womens Plus</a></li>
+                            <li><a class="dropdown-item" href="#"> Men</a></li>
+                            <li><a class="dropdown-item" href="#">Young Adult</a></li>
+                            <li><a class="dropdown-item" href="#">Girls</a></li>
+                            <li><a class="dropdown-item" href="#">Boys</a></li>
+                            <li><a class="dropdown-item" href="#">Baby</a></li>
+                            <li><a class="dropdown-item" href="#">Shoes</a></li>
+                            <li><a class="dropdown-item" href="#">Socks, Tights & Hosiery</a></li>
+                            <li><a class="dropdown-item" href="#">Jewelry & Watches</a></li>
+                            <li><a class="dropdown-item" href="#">Bags & Accessories</a></li>
+                        </ul>
+                    </div>
                 </div>
-
-                <hr>
-                <div class="dropdown">
-                    <button class="btn border border-white" type="button" id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <div class="">
-                            <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-c6c4/k2-_c2e2e6f7-2f6e-4f2d-9351-e581fb947588.v1.jpg"
-                                class="w-25 rounded-circle">
-                            <span class="me-2 ms-2">Pantry & Snacks</span>
-                            <i class="fa-solid fa-chevron-down ms-3"></i>
-                        </div>
-
-                    </button>
-
-                    <ul class="dropdown-menu ms-3 border border-white">
-                        <li><a class="dropdown-item" href="#">Snacks</a></li>
-                        <li><a class="dropdown-item" href="#">Pantry</a></li>
-                        <li><a class="dropdown-item" href="#">Breakfast & Cereal</a></li>
-                        <li><a class="dropdown-item" href="#">Candy</a></li>
-                        <li><a class="dropdown-item" href="#">Baking</a></li>
-                    </ul>
+                <div class="col-lg-9 col-md-6 col-sm-6">
+                    <span>Shop groceries</span>
                 </div>
-                <hr>
-                <div class="dropdown">
-                    <button class="btn border border-white" type="button" id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <div class="">
-                            <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-f754/k2-_ae5145df-fcf4-4bd2-9512-3e6078153722.v1.jpg"
-                                class="w-25 rounded-circle">
-                            <span class="me-5 ms-2">Frezon</span>
-                            <i class="fa-solid fa-chevron-down ms-5"></i>
-                        </div>
-
-                    </button>
-
-                    <ul class="dropdown-menu ms-3 border border-white">
-                        <li><a class="dropdown-item" href="#">Shop All</a></li>
-                        <li><a class="dropdown-item" href="#">Frezon Breakfast</a></li>
-                        <li><a class="dropdown-item" href="#">Frezon & Deaserts</a></li>
-                        <li><a class="dropdown-item" href="#">Frezon Meals</a></li>
-                        <li><a class="dropdown-item" href="#">Frezon Appetizer & Snacks</a></li>
-                        <li><a class="dropdown-item" href="#">Frezon Pizza, pasta & Breads</a></li>
-                        <li><a class="dropdown-item" href="#">Frezon Produce</a></li>
-                        <li><a class="dropdown-item" href="#">Frezon Meat Seafood & Vegetarian</a></li>
-                        <li><a class="dropdown-item" href="#">Frezon Potatoes</a></li>
-
-                    </ul>
-                </div>
-                <hr>
-                <div class="dropdown">
-                    <button class="btn border border-white" type="button" id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <div class="">
-                            <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-2a8e/k2-_9de384d1-e00a-45db-b90e-d420ce543078.v1.jpg"
-                                class="w-25 rounded-circle">
-                            <span class="ms-2 me-5">Beverages</span>
-                            <i class="fa-solid fa-chevron-down ms-3"></i>
-                        </div>
-
-                    </button>
-
-                    <ul class="dropdown-menu ms-3 border border-white">
-                        <li><a class="dropdown-item" href="#">Shop All</a></li>
-                        <li><a class="dropdown-item" href="#">Soda Pop</a></li>
-                        <li><a class="dropdown-item" href="#">Water</a></li>
-                        <li><a class="dropdown-item" href="#"> Juices</a></li>
-                        <li><a class="dropdown-item" href="#">Sports Drinks</a></li>
-                        <li><a class="dropdown-item" href="#">Enegray Drinks</a></li>
-                        <li><a class="dropdown-item" href="#">Kids'Multipack Drinks</a></li>
-                        <li><a class="dropdown-item" href="#">Drink Mixes</a></li>
-                        <li><a class="dropdown-item" href="#">Cocktail mixes</a></li>
-                        <li><a class="dropdown-item" href="#"> Alcohol</a></li>
-                        <li><a class="dropdown-item" href="#"> Coffee</a></li>
-                        <li><a class="dropdown-item" href="#"> Tea</a></li>
-                        <li><a class="dropdown-item" href="#"> Milk</a></li>
-
-
-
-
-                    </ul>
-                </div>
-                <hr>
-                <div class="dropdown">
-                    <button class="btn border border-white" type="button" id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <div class="">
-                            <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-98fc/k2-_38e060ca-3233-45ff-a84d-a10538dd85cd.v1.jpg"
-                                class="w-25 rounded-circle">
-                            <span class="ms-2 me-5"> Grab & Go</span>
-                            <i class="fa-solid fa-chevron-down ms-3"></i>
-                        </div>
-
-                    </button>
-
-                    <ul class="dropdown-menu ms-3 border border-white">
-                        <li><a class="dropdown-item" href="#">Sandwiches</a></li>
-                        <li><a class="dropdown-item" href="#"> Salads</a></li>
-                        <li><a class="dropdown-item" href="#">Beverages</a></li>
-                        <li><a class="dropdown-item" href="#"> Snack Bars</a></li>
-                        <li><a class="dropdown-item" href="#">Gum</a></li>
-                        <li><a class="dropdown-item" href="#">Mint</a></li>
-                        <li><a class="dropdown-item" href="#">Chips</a></li>
-                        <li><a class="dropdown-item" href="#">Jerky & Dried Meats</a></li>
-                        <li><a class="dropdown-item" href="#">Chocolate</a></li>
-                        <li><a class="dropdown-item" href="#"> Gummy Candy</a></li>
-                        <li><a class="dropdown-item" href="#"> Cookies</a></li>
-                        <li><a class="dropdown-item" href="#"> Gift Cards</a></li>
-                    </ul>
-                </div>
-
-                <hr>
-                <div class="dropdown">
-                    <button class="btn border border-white" type="button" id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <div class="">
-                            <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-9531/k2-_cb0e0b32-98a7-47b0-bb58-9138586ad9cc.v1.jpg"
-                                class="w-25 rounded-circle">
-                            <span class=" me-3">Household Essentials</span>
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </div>
-
-                    </button>
-
-                    <ul class="dropdown-menu ms-3 border border-white">
-                        <li><a class="dropdown-item" href="#">Sandwiches</a></li>
-                        <li><a class="dropdown-item" href="#"> Salads</a></li>
-                        <li><a class="dropdown-item" href="#">Beverages</a></li>
-                        <li><a class="dropdown-item" href="#"> Snack Bars</a></li>
-                        <li><a class="dropdown-item" href="#">Gum</a></li>
-                        <li><a class="dropdown-item" href="#">Mint</a></li>
-                        <li><a class="dropdown-item" href="#">Chips</a></li>
-                        <li><a class="dropdown-item" href="#">Jerky & Dried Meats</a></li>
-                        <li><a class="dropdown-item" href="#">Chocolate</a></li>
-                        <li><a class="dropdown-item" href="#"> Gummy Candy</a></li>
-                        <li><a class="dropdown-item" href="#"> Cookies</a></li>
-                        <li><a class="dropdown-item" href="#"> Gift Cards</a></li>
-                    </ul>
-                </div>
-                <hr>
-                <div class="dropdown">
-                    <button class="btn border border-white" type="button" id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <div class="">
-                            <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-e34c/k2-_181cd831-fe71-489d-bcbe-0916f8966e0b.v1.jpg"
-                                class="w-25 rounded-circle">
-                            <span class=" ms-2 me-2"> Health & Wellness</span>
-                            <i class="fa-solid fa-chevron-down ms-4"></i>
-                        </div>
-
-                    </button>
-                    <ul class="dropdown-menu ms-3 border border-white">
-                        <li><a class="dropdown-item" href="#">Shop All Health</a></li>
-                        <li><a class="dropdown-item" href="#"> COVID-19 Test Kits</a></li>
-                        <li><a class="dropdown-item" href="#">Cold, Cough & Flu</a></li>
-                        <li><a class="dropdown-item" href="#">Pain Management</a></li>
-                        <li><a class="dropdown-item" href="#">Allergy, Sinus & Asthma</a></li>
-                        <li><a class="dropdown-item" href="#">Digestive Health</a></li>
-                        <li><a class="dropdown-item" href="#">First Aid</a></li>
-                        <li><a class="dropdown-item" href="#">Home Health Care</a></li>
-                        <li><a class="dropdown-item" href="#">Women's Health</a></li>
-                        <li><a class="dropdown-item" href="#"> Men's Health</a></li>
-                        <li><a class="dropdown-item" href="#"> Diabetes Management</a></li>
-                        <li><a class="dropdown-item" href="#"> Shop All Wellness</a></li>
-                        <li><a class="dropdown-item" href="#">Vitamins & Supplements</a></li>
-                        <li><a class="dropdown-item" href="#"> Protein & Supplements</a></li>
-                        <li><a class="dropdown-item" href="#"> Weight Management</a></li>
-                    </ul>
-                </div>
-
-                <hr>
-                <div class="dropdown">
-                    <button class="btn border border-white" type="button" id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <div class="">
-                            <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-59dd/k2-_0bc8ec7a-1a0a-4e84-8b92-bf3c59d33e98.v1.jpg"
-                                class="w-25 rounded-circle">
-                            <span class="ms-2 me-5"> Personal Care</span>
-                            <i class="fa-solid fa-chevron-down ms-3"></i>
-                        </div>
-
-                    </button>
-
-                    <ul class="dropdown-menu ms-3 border border-white">
-                        <li><a class="dropdown-item" href="#">Shop All</a></li>
-                        <li><a class="dropdown-item" href="#"> Shop Multipacks</a></li>
-                        <li><a class="dropdown-item" href="#">Bath & Body</a></li>
-                        <li><a class="dropdown-item" href="#"> Sun Care</a></li>
-                        <li><a class="dropdown-item" href="#">Feminine Care</a></li>
-                        <li><a class="dropdown-item" href="#">Hair Care</a></li>
-                        <li><a class="dropdown-item" href="#">Oral Care</a></li>
-                        <li><a class="dropdown-item" href="#">Shaving</a></li>
-                        <li><a class="dropdown-item" href="#">Men's Grooming</a></li>
-                    </ul>
-                </div>
-                <hr>
-                <div class="dropdown">
-                    <button class="btn border border-white" type="button" id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <div class="">
-                            <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-d11d/k2-_0df859fc-5ca2-4758-9e4e-8e6f10d18125.v1.jpg"
-                                class="w-25 rounded-circle">
-                            <span class="ms-3 me-5">Beauty</span>
-                            <i class="fa-solid fa-chevron-down ms-5"></i>
-                        </div>
-
-                    </button>
-
-                    <ul class="dropdown-menu ms-3 border border-white">
-                        <li><a class="dropdown-item" href="#">Shop All</a></li>
-                        <li><a class="dropdown-item" href="#"> Premium Beauty</a></li>
-                        <li><a class="dropdown-item" href="#">Hair Care</a></li>
-                        <li><a class="dropdown-item" href="#"> Skin Care</a></li>
-                        <li><a class="dropdown-item" href="#">Fragrances</a></li>
-                        <li><a class="dropdown-item" href="#">Makeup</a></li>
-                        <li><a class="dropdown-item" href="#">Beauty Tools & Tech</a></li>
-                        <li><a class="dropdown-item" href="#">Nail Care</a></li>
-                        <li><a class="dropdown-item" href="#">Men's Grooming</a></li>
-                        <li><a class="dropdown-item" href="#">Beauty Box - Subscribe Now!</a></li>
-
-
-                    </ul>
-                </div>
-
-                <hr>
-                <div class="dropdown">
-                    <button class="btn border border-white" type="button" id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <div class="">
-                            <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-4df5/k2-_0a79f475-b97d-4f9a-87b7-3fbe4d874a5d.v1.jpg"
-                                class="w-25 rounded-circle">
-                            <span class="ms-3 me-5"> Pets</span>
-                            <i class="fa-solid fa-chevron-down ms-5"></i>
-                        </div>
-
-                    </button>
-
-                    <ul class="dropdown-menu ms-3 border border-white">
-                        <li><a class="dropdown-item" href="#">Shop All</a></li>
-                        <li><a class="dropdown-item" href="#"> Dog</a></li>
-                        <li><a class="dropdown-item" href="#">Cat</a></li>
-                        <li><a class="dropdown-item" href="#"> Fish</a></li>
-                        <li><a class="dropdown-item" href="#">Small Animal</a></li>
-                        <li><a class="dropdown-item" href="#">Reptile</a></li>
-                        <li><a class="dropdown-item" href="#">Bird</a></li>
-                        <li><a class="dropdown-item" href="#">Horse</a></li>
-                        <li><a class="dropdown-item" href="#">Farm Animal</a></li>
-                        <li><a class="dropdown-item" href="#">Pet Care Services</a></li>
-
-
-                    </ul>
-                </div>
-                <hr>
-                <div class="dropdown">
-                    <button class="btn border border-white" type="button" id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <div class="">
-                            <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-e81b/k2-_9e4c4cfe-405a-48ad-9500-39ba911997fc.v1.jpg"
-                                class="w-25 rounded-circle">
-                            <span class="ms-3 me-5">Baby</span>
-                            <i class="fa-solid fa-chevron-down ms-5"></i>
-                        </div>
-
-                    </button>
-
-                    <ul class="dropdown-menu ms-3 border border-white">
-                        <li><a class="dropdown-item" href="#">Shop All</a></li>
-                        <li><a class="dropdown-item" href="#">EBT Eligible</a></li>
-                        <li><a class="dropdown-item" href="#">Baby Formula</a></li>
-                        <li><a class="dropdown-item" href="#"> Baby Food</a></li>
-                        <li><a class="dropdown-item" href="#">Toddler Food & Drinks</a></li>
-                        <li><a class="dropdown-item" href="#">Diapers</a></li>
-                        <li><a class="dropdown-item" href="#">Baby Wipes</a></li>
-                        <li><a class="dropdown-item" href="#">Baby Bath Care</a></li>
-                        <li><a class="dropdown-item" href="#">Baby Skin Care</a></li>
-                        <li><a class="dropdown-item" href="#">Baby Health Care</a></li>
-                        <li><a class="dropdown-item" href="#">Baby Medicine</a></li>
-                        <li><a class="dropdown-item" href="#">Gear & Activity</a></li>
-                        <li><a class="dropdown-item" href="#">Baby & Toddler Toys</a></li>
-                        <li><a class="dropdown-item" href="#">Baby & Toddler Clothing</a></li>
-                        <li><a class="dropdown-item" href="#">Baby Gift Ideas</a></li>
-                    </ul>
-                </div>
-
-                <hr>
-                <div class="dropdown">
-                    <button class="btn border border-white" type="button" id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <div class="">
-                            <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-9022/k2-_a0ae7752-69ef-4f3f-8a9a-6292478fc0ae.v1.jpg"
-                                class="w-25 rounded-circle">
-                            <span class="ms-3 me-5">Fashion</span>
-                            <i class="fa-solid fa-chevron-down ms-5"></i>
-                        </div>
-
-                    </button>
-
-                    <ul class="dropdown-menu ms-3 border border-white">
-                        <li><a class="dropdown-item" href="#">Shop All</a></li>
-                        <li><a class="dropdown-item" href="#">Women</a></li>
-                        <li><a class="dropdown-item" href="#">Womens Plus</a></li>
-                        <li><a class="dropdown-item" href="#"> Men</a></li>
-                        <li><a class="dropdown-item" href="#">Young Adult</a></li>
-                        <li><a class="dropdown-item" href="#">Girls</a></li>
-                        <li><a class="dropdown-item" href="#">Boys</a></li>
-                        <li><a class="dropdown-item" href="#">Baby</a></li>
-                        <li><a class="dropdown-item" href="#">Shoes</a></li>
-                        <li><a class="dropdown-item" href="#">Socks, Tights & Hosiery</a></li>
-                        <li><a class="dropdown-item" href="#">Jewelry & Watches</a></li>
-                        <li><a class="dropdown-item" href="#">Bags & Accessories</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-9">
-                <span>Shop groceries</span>
             </div>
         </div>
-    </div>
+    </main>
+   
     <footer>
         <div class="footer-top">
             <p>We’d love to hear what you think!</p>
@@ -476,7 +569,18 @@
             </p>
         </div>
     </footer>
-
+    <script>
+        const sideNav = document.getElementById('sideNav');
+        const backDrop = document.getElementById('backDrop');
+        function showSideNav() {
+            sideNav.style.display = 'flex';
+            backDrop.style.display = 'flex';
+        }
+        function hideSideNav() {
+            sideNav.style.display = 'none';
+            backDrop.style.display = 'none';
+        }
+    </script>
     <script src="https://kit.fontawesome.com/f6798b3fdf.js" crossorigin="anonymous"></script>
     <script src="bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
 </body>

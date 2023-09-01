@@ -16,6 +16,10 @@ body{
     width: 100vw;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
 }
 *{
     box-sizing: border-box;
@@ -140,7 +144,7 @@ right: -5px;
 }
 .sec-nav ul{
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     list-style: none;
     font-size: 15px;
 }
@@ -148,7 +152,7 @@ right: -5px;
 .ship {
     display: flex;
     gap: 10px;
-
+    font-size: 14px;
 }
 .sec-nav a {
     text-decoration: none;
@@ -159,6 +163,48 @@ right: -5px;
     text-decoration: underline;
     
 }
+
+footer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-top{
+    background-color: #E6F1FC;
+    padding: 2rem;
+}
+.footer-top button {
+    margin-top: 1rem;
+    padding: 12px 25px 8px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 25px;
+    font-size: 15px;
+    font-family: bogle-bold, sans-serif;
+}
+
+.footer-btm{
+    background-color: #004F9A;
+    padding: 2rem 4rem;
+    color: white;
+}
+.footer-btm a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+.footer-btm p{
+    margin-top: 2rem;
+    font-size: 12px;
+}
+.footer-btm .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:.2rem 1rem ;
+}
 @media (max-width:1024px) {
 
     .hide-md {
@@ -167,7 +213,22 @@ right: -5px;
     .show-md {
         display: flex;
     }
-    
+    .footer-btm{
+        background-color: #E6F1FC;
+        color: black;
+        border-top: 3px solid rgba(179, 177, 177, 0.53);
+    }
+    .footer-btm a{
+        color: black;
+        opacity: .7;
+    }
+    .footer-btm .links{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap:.2rem 1rem ;
+    }
 }
 
 

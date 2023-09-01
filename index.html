@@ -7,10 +7,101 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="sideNav" onclick="hideSideNav()"  class="nav-side">
+        <div class="item">
+            <img class="logo" src="https://static.vecteezy.com/system/resources/previews/022/100/282/original/walmart-logo-transparent-free-png.png" />
+            <h2>Hi, User</h2>
+        </div>
+        <div class="items">
+
+       
+        <a href="#" class="walmart item">
+            <img class="logo" src="https://i5.walmartimages.com/dfw/63fd9f59-ac39/29c6759d-7f14-49fa-bd3a-b870eb4fb8fb/v1/wplus-icon-blue.svg" />
+            <p>Walmart +</p>
+        </a>
+        <hr>
+        <a href="#" class="item">
+            <i class="fa-solid fa-receipt"></i>
+            <p>Purchase History</p>
+        </a>
+        <a href="#" class="item" style="margin-left: -5px;">
+            <i class="fa-solid fa-file-import"></i>
+            <p>
+
+                My items
+            </p>
+        </a>
+        <a href="#" class="item">
+            <i class="fa-regular fa-user"></i>
+            <p>
+
+                Account
+            </p>
+        </a>
+        <hr/>
+        <a href="#" class="item">
+            <i class="fa-regular fa-circle-question"></i>
+            <p>
+
+                Help
+            </p>
+        </a>
+        <hr/>
+        <a href="#" class="item">
+            <i class="fa-regular fa-heart"></i>
+            <p>
+
+                Lists
+            </p>
+        </a>
+        <a href="#" class="item">
+            <i class="fa-solid fa-gift"></i>
+            <p>
+
+                Registries
+            </p>
+        </a>
+        <hr/>
+        <div class="nav-list">
+            <div href="#" class="item">
+                <i class="fa-solid fa-square-poll-horizontal"></i>
+                <p>
+                    Departments
+                </p>
+            </div>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="nav-list">
+            <div href="#" class="item">
+                <i class="fa-solid fa-hand-holding-medical"></i>
+                <p>
+                    Services
+                </p>
+            </div>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <hr>
+        <a href="#" class="item">
+            <i class="fa-regular fa-comment"></i>
+            <p>
+                Give feedback
+            </p>
+        </a>
+        <hr>
+        <a href="#" class="item">
+            <i class="fa-solid fa-right-to-bracket"></i>
+            <p>
+                Sign out
+            </p>
+        </a>
+    </div>
+    </div>
+    <div id="backDrop" onclick="hideSideNav()">
+
+    </div>
     <header>
         <div class="main-nav">
-            <div class="show-md ">
-
+            <div class="show-md" onclick="showSideNav()">
                 <i class="fa-solid fa-bars " style="color: white; font-size: 25px; cursor: pointer;"></i>
             </div>
             
@@ -120,7 +211,18 @@
             </p>
         </div>
     </footer>
-
+<script>
+    const sideNav = document.getElementById('sideNav');
+    const backDrop = document.getElementById('backDrop');
+    function showSideNav(){
+        sideNav.style.display = 'flex';
+        backDrop.style.display = 'flex';
+    }
+    function hideSideNav(){
+        sideNav.style.display = 'none';
+        backDrop.style.display = 'none';
+    }
+</script>
     <script src="https://kit.fontawesome.com/f6798b3fdf.js" crossorigin="anonymous"></script>
 </body>
 </html>

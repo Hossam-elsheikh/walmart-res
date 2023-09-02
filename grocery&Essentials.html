@@ -123,7 +123,7 @@
             </div>
 
             <div class="elem hide-md">
-                <img class="logo" src="./assets/logo.png.png" />
+                <a href="./index.html"><img class="logo" src="./assets/logo.png.png" /></a>
             </div>
 
             <img class="logo show-md"
@@ -591,7 +591,16 @@
                 }
             });
         }
-
+        const sideNav = document.getElementById('sideNav');
+    const backDrop = document.getElementById('backDrop');
+    function showSideNav(){
+        sideNav.style.display = 'flex';
+        backDrop.style.display = 'flex';
+    }
+    function hideSideNav(){
+        sideNav.style.display = 'none';
+        backDrop.style.display = 'none';
+    }
     </script>
     <script src="https://kit.fontawesome.com/f6798b3fdf.js" crossorigin="anonymous"></script>
     <script src="bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>

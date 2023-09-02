@@ -60,7 +60,12 @@ header{
 }
 .elem p {
     font-family: bogle-bold, sans-serif;
+    margin: 0;
     margin-top: 5px;
+    font-size: 16px;
+}
+.elem span{
+    margin: 0;
 }
 .search {
 
@@ -91,7 +96,11 @@ header{
    font-size: 16px;
    
 }
-
+.elem .txt {
+     display: flex;
+     flex-direction: column;
+     gap: 0;
+}
 .elem .txt span {
     font-size: 11px;
 }
@@ -112,9 +121,9 @@ header{
     position: relative;
 }
 .elem .cart i::after {
-   content: '0';
-width: 8px;
-height: 8px;
+content: '0';
+width: max-content ;
+height: max-content;
 background-color:#FFC220 ;
 font-size: 10px;
 color: black;

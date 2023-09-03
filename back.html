@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="./mycss.css"/>
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="sideNav" onclick="hideSideNav()"  class="nav-side">
+        <div class="item">
+            <img class="logo" src="https://static.vecteezy.com/system/resources/previews/022/100/282/original/walmart-logo-transparent-free-png.png" />
+            <h2>Hi, User</h2>
+        </div>
+        <div class="items">
+
+       
+        <a href="#" class="walmart item">
+            <img class="logo" src="https://i5.walmartimages.com/dfw/63fd9f59-ac39/29c6759d-7f14-49fa-bd3a-b870eb4fb8fb/v1/wplus-icon-blue.svg" />
+            <p>Walmart +</p>
+        </a>
+        <hr>
+        <a href="#" class="item">
+            <i class="fa-solid fa-receipt"></i>
+            <p>Purchase History</p>
+        </a>
+        <a href="#" class="item" style="margin-left: -5px;">
+            <i class="fa-solid fa-file-import"></i>
+            <p>
+
+                My items
+            </p>
+        </a>
+        <a href="#" class="item">
+            <i class="fa-regular fa-user"></i>
+            <p>
+
+                Account
+            </p>
+        </a>
+        <hr/>
+        <a href="#" class="item">
+            <i class="fa-regular fa-circle-question"></i>
+            <p>
+
+                Help
+            </p>
+        </a>
+        <hr/>
+        <a href="#" class="item">
+            <i class="fa-regular fa-heart"></i>
+            <p>
+
+                Lists
+            </p>
+        </a>
+        <a href="#" class="item">
+            <i class="fa-solid fa-gift"></i>
+            <p>
+
+                Registries
+            </p>
+        </a>
+        <hr/>
+        <div class="nav-list">
+            <div href="#" class="item">
+                <i class="fa-solid fa-square-poll-horizontal"></i>
+                <p>
+                    Departments
+                </p>
+            </div>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="nav-list">
+            <div href="#" class="item">
+                <i class="fa-solid fa-hand-holding-medical"></i>
+                <p>
+                    Services
+                </p>
+            </div>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <hr>
+        <a href="#" class="item">
+            <i class="fa-regular fa-comment"></i>
+            <p>
+                Give feedback
+            </p>
+        </a>
+        <hr>
+        <a href="#" class="item">
+            <i class="fa-solid fa-right-to-bracket"></i>
+            <p>
+                Sign out
+            </p>
+        </a>
+    </div>
+    </div>
+    <div id="backDrop" onclick="hideSideNav()">
+
+    </div>
+    <header>
+        <div class="main-nav">
+            <div class="show-md" onclick="showSideNav()">
+                <i class="fa-solid fa-bars " style="color: white; font-size: 25px; cursor: pointer;"></i>
+            </div>
+            
+            <div class="elem hide-md">
+                <img class="logo" src="./assets/logo.png.png" />
+            </div>
+            
+                <img class="logo show-md" src="https://static.vecteezy.com/system/resources/previews/022/100/282/original/walmart-logo-transparent-free-png.png" />
+          
+            <div class="elem hide-md">
+                <i class="fa-solid fa-square-poll-horizontal"></i>
+                <p>
+                    Departments
+                </p>
+            </div>
+            <div class="elem hide-md">
+                <i class="fa-solid fa-hand-holding-medical"></i>
+                <p>
+                    Services
+                </p>
+            </div>
+            <div class="search">
+                <input type="search" placeholder="Search everything at Walmart online and in the store" />
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="elem hide-md">
+                <i class="fa-regular fa-heart"></i>
+                <div class="txt">
+                    <span>Reorder</span>
+                    <p>My Items</p>
+                </div>
+            </div>
+            <div class="elem hide-md">
+                <i class="fa-regular fa-user"></i>
+                <div class="txt">
+                    <span>Hi, user</span>
+                    <p>Account<p>
+                </div>
+            </div>
+            <div class="elem">
+                <div class="cart">
+<i class="fa-solid fa-cart-shopping"></i>
+                    <span>$0,00</span>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="sec-nav ">
+            
+                <div class="ship">
+                    <i class="fa-solid fa-truck"></i>
+                    <p>How do you want your items?</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <p class="address">| &nbsp<i class="fa-solid fa-location-dot"></i> &nbsp Sacramento, 98326 &nbsp<i class="fa-solid fa-house"></i>&nbsp Sacremnto, Supercenter</p>
+                </div>
+            <nav class="hide-md">
+                <ul>
+                    <li><a href="#">Deals</a></li>
+                    <li id="dis1"><a href="./grocery&Essentials.html">Grocery & Essentials</a></li>
+                    <li id="dis4"><a href="#">Back to School</a></li>
+                    <li><a href="#">Halloween</a></li>
+                    <li id="dis2"><a href="#">Top Toy list</a></li>
+                    <li id="dis3"><a href="#">Beauty Glow up</a></li>
+                    <li><a href="#">Fashion</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Registry</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- nav -->
+<div class="container-fluid">
+    <div class="row">
+    <div class=" col col-sm-12 bg-primary-subtle nav1">
+        <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Brand</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">school supplies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">activity supplies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">featured shop</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">savings</a>
+              </li>
+          </ul>
+    </div>
+    </div>
+
+    <div class=" container nav2">
+        <div class="row">
+            <div class=" col col-sm-12">
+        <!-- <button type="button" class="btn btn-outline-dark">Get it today</button>
+        <button type="button" class="btn btn-outline-dark">Shop all school supplies</button>
+        <button type="button" class="btn btn-outline-dark">backpacks</button>
+        <button type="button" class="btn btn-outline-dark">kids fashion</button>
+        <button type="button" class="btn btn-outline-dark">school teach</button>
+        <button type="button" class="btn btn-outline-dark">pens</button>
+        <button type="button" class="btn btn-outline-dark">pencils&more</button>
+        <button type="button" class="btn btn-outline-dark">glue sticky</button>
+        <button type="button" class="btn btn-outline-dark">colored pencils</button> -->
+        <!-- <button type="button" class="btn btn-outline-dark">Dark</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button>  -->
+        <div id="carouselExample" class=" col col-sm-12 carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <button type="button" class="btn btn-outline-dark gx-5">Get it today</button>
+        <button type="button" class="btn btn-outline-dark gx-5">Shop all school supplies</button>
+        <button type="button" class="btn btn-outline-dark gx-5">backpacks</button>
+        <button type="button" class="btn btn-outline-dark gx-5">kids fashion</button>
+        <button type="button" class="btn btn-outline-dark gx-5">school teach</button>
+        <button type="button" class="btn btn-outline-dark gx-5">pens</button>
+        <button type="button" class="btn btn-outline-dark gx-5">pencils&more</button>
+        <button type="button" class="btn btn-outline-dark gx-5">glue sticky</button>
+        <button type="button" class="btn btn-outline-dark gx-5">colored pencils</button>
+        <button type="button" class="btn btn-outline-dark gx-5">pens</button>
+      
+       
+              </div>
+              <div class= " carousel-item">
+                <button type="button" class="btn btn-outline-dark gx-5">marks</button>
+                <button type="button" class="btn btn-outline-dark gx-5">highlighters</button>
+                <button type="button" class="btn btn-outline-dark">note book</button>
+                <button type="button" class="btn btn-outline-dark">binders and more </button>
+                <button type="button" class="btn btn-outline-dark">folders</button>
+                <button type="button" class="btn btn-outline-dark">notebook papers</button>
+                <button type="button" class="btn btn-outline-dark">kids fashion</button>
+                <button type="button" class="btn btn-outline-dark">scissors</button>
+                <button type="button" class="btn btn-outline-dark">disk organiser</button>
+                <button type="button" class="btn btn-outline-dark">pencils&more</button>
+              
+              </div>
+           
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+          <br>
+          <br>
+          <hr>
+
+          <div class="row con">
+            <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-4494/k2-_e87aa863-f617-42a1-b1ad-965e59a53373.v1.jpg" style="width:100%;">
+            <div class="centered">Back to school for less | <a href="#" style="color:black">shop now</a>
+            <br>
+            Save on all the essentials they'll need.
+            </div>  
+          </div>
+
+     </div>
+    </div>
+    <!-- second part -->
+    <div class="row">
+        <div class=" col col-4">
+          <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link" href="#item-1">Item 1</a>
+              <!-- <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+                <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a> -->
+              </nav>
+              <a class="nav-link" href="#item-2">Item 2</a>
+              <a class="nav-link" href="#item-3">Item 3</a>
+              <!-- <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a> -->
+              </nav>
+            </nav>
+          </nav>
+        </div>
+      
+        <div class="col col-xl-8 col-md-4 col-sm-3">
+            <h5>Supplies by grade level</h5>
+            <div class="row1">
+           
+            <a href="#" class="img-para"><img class="photoimg" src="https://i5.walmartimages.com/dfw/4ff9c6c9-50f1/k2-_395a1a88-5793-4922-a619-829535f683d1.v1.jpg?odnHeight=290&odnWidth=290&odnBg=FFFFFF">
+                <br>
+                <p class="img-para">&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Preschool</p>
+                </a> 
+
+            <a href="#" class="img-para"><img class="photoimg" src="https://i5.walmartimages.com/dfw/4ff9c6c9-cd4a/k2-_016369b1-adaa-4702-8a1d-bc21c2c019da.v1.jpg?odnHeight=290&odnWidth=290&odnBg=FFFFFF">
+            <br>
+            <p class="img-para">Elmentary school</p>
+            </a> 
+            
+            <a href="#" class="img-para"><img class="photoimg" src="https://i5.walmartimages.com/dfw/4ff9c6c9-a578/k2-_6b5b37b3-a2f9-431e-85f1-92e208984711.v1.jpg?odnHeight=290&odnWidth=290&odnBg=FFFFFF">
+                <br>
+                <p class="img-para">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;Middle school</p>
+                </a> 
+                <a href="#" class="img-para"><img class="photoimg" src="https://i5.walmartimages.com/dfw/4ff9c6c9-4fe5/k2-_a87dc109-d9b9-4946-936e-ccf63ce049c9.v1.jpg?odnHeight=290&odnWidth=290&odnBg=FFFFFF">
+                    <br>
+                    <p class="img-para">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;High school</p>
+                    </a>
+                    <a href="#" class="img-para"><img class="photoimg" src="https://i5.walmartimages.com/dfw/4ff9c6c9-1350/k2-_76ef303c-be18-4336-9b2a-089523b22d5a.v1.jpg?odnHeight=290&odnWidth=290&odnBg=FFFFFF">
+                        <br>
+                        <p class="img-para">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;college</p>
+                        </a>
+                        <a href="#" class="img-para"><img class="photoimg" src="https://i5.walmartimages.com/dfw/4ff9c6c9-3bed/k2-_46602594-a8bc-44bc-a1a5-33adc893803c.v1.jpg?odnHeight=290&odnWidth=290&odnBg=FFFFFF">
+                            <br>
+                            <p class="img-para">&nbsp;&nbsp;shop all school supplies</p>
+                            </a>
+<!-- <span class="badge text-bg-warning">Warning</span> -->
+            <!-- <button class ="cir">preschool</button> -->
+        </div>
+       <form action="" style="border:1px solid grey">
+        <caption><h3>Find your school supply list</h3></caption>
+        <p>Teachers told us what their students need for class. Find your class list and get ready for school.</p>
+        <input type="text" placeholder="enter school city and state or zip code*">
+        <input type="text" placeholder="School name">
+        <button type="button" class="btn btn-primary btn-lg">Find supplies list</button>
+    </form>
+    <div class="row1">
+        <a href="#" class="img-para"><img class="photoimg" src="https://i5.walmartimages.com/dfw/4ff9c6c9-5c85/k2-_4a008c50-cef1-486a-b591-07965c350637.v1.jpg?odnHeight=290&odnWidth=290&odnBg=FFFFFF">
+            <br>
+            <p class="img-para">&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Kids fashion</p>
+            </a> 
+            <a href="#" class="img-para"><img class="photoimg" src="https://i5.walmartimages.com/dfw/4ff9c6c9-5693/k2-_16a29388-cc96-4c9f-ae9d-19df06ea7a7f.v1.jpg?odnHeight=290&odnWidth=290&odnBg=FFFFFF">
+                <br>
+                <p class="img-para">&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp;  Shoes</p>
+                </a> 
+                <a href="#" class="img-para"><img class="photoimg" src="https://i5.walmartimages.com/dfw/4ff9c6c9-10b6/k2-_6b2989ce-11e5-44c9-826f-9a54082e4942.v1.jpg?odnHeight=290&odnWidth=290&odnBg=FFFFFF">
+                    <br>
+                    <p class="img-para">&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Backpacks</p>
+                    </a> 
+                    <a href="#" class="img-para"><img class="photoimg" src="https://i5.walmartimages.com/dfw/4ff9c6c9-9f0c/k2-_8293362e-eeb8-4882-8ccc-91f51763e3ef.v1.jpg?odnHeight=290&odnWidth=290&odnBg=FFFFFF">
+                        <br>
+                        <p class="img-para">&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Tech</p>
+                        </a> 
+                        <a href="#" class="img-para"><img class="photoimg" src="https://i5.walmartimages.com/dfw/4ff9c6c9-ea10/k2-_bb5ce1c6-0bb0-4ae1-931f-ad6b34fdc4a0.v1.jpg?odnHeight=290&odnWidth=290&odnBg=FFFFFF">
+                            <br>
+                            <p class="img-para">&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Lunch prep</p>
+                            </a> 
+                            <a href="#" class="img-para"><img class="photoimg" src="https://i5.walmartimages.com/dfw/4ff9c6c9-e4d9/k2-_230d8803-ce75-4fdc-acb3-dfbee9ce4f6d.v1.jpg?odnHeight=290&odnWidth=290&odnBg=FFFFFF">
+                                <br>
+                                <p class="img-para">&nbsp; &nbsp;Lunch box and essential</p>
+                                </a> 
+                            
+    </div>
+    <br>
+    <hr>
+    <!-- row2 -->
+    <div class="row">
+        <h5>school supplies deals</h5>
+        <div class="col col-xl-4 col-lg-8">
+        <div class="card" style="width: 18rem;">
+            <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-a2a4/k2-_e9d01525-b15d-49c4-8729-c8c5f5acd8a4.v1.jpg?odnHeight=222&odnWidth=395&odnBg=FFFFFF" class="card-img-top" >
+            <div class="card-body">
+              <h5 class="card-title">50¢ and under</h5>
+              <a href="#"> Shop more</a>
+              <p class="card-text">Get what they need for school, for less.</p>
+           <!-- internal card -->
+            </div>
+          </div>
+        </div>
+        
+        <div class="col col-xl-4 col-lg-8">
+          <div class="card" style="width: 18rem;">
+            <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-2533/k2-_acaf23b7-eb1e-4318-9022-220a4613c22d.v1.jpg?odnHeight=222&odnWidth=395&odnBg=FFFFFF" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">$1 and under</h5>
+              <a href="#"> Shop more</a>
+              <p class="card-text">Hot prices on got-to-haves for school.</p>
+            </div>
+          </div>
+          </div>
+          
+        <div class="col col-xl-4 col-lg-8">
+          <div class="card" style="width: 18rem;">
+            <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-2ad1/k2-_ab64a6f6-bddd-4fbf-9c8f-1b1ba27f4147.v1.jpg?odnHeight=222&odnWidth=395&odnBg=FFFFFF" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">$5 and under</h5>
+              <a href="#"> Shop more</a>
+              <p class="card-text">Get their classroom essentials at lower prices.</p>
+            </div>
+          </div>
+          </div>
+
+          <!-- row of image -->
+    <div class="row con">
+    <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-c4dd/k2-_4257654f-4a1a-4049-bab0-4a48cb0ab3e1.v1.jpg" style="width:100%;">
+    <div class="centered">Back-to-school savings, in session! | <a href="#" style="color:black">shop now</a>
+    <br>
+    Save on all the essentials they'll need.
+    </div>  
+    </div>
+<hr>
+<br>
+    <div class="row">
+        <h5>back to cool</h5>
+<div class="col col-xl-4 col-lg-8">
+<div class="card" style="width: 18rem;">
+  <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-9671/k2-_e2081bd1-a3c4-4c32-aec3-5d231ca5f796.v1.jpg?odnHeight=222&odnWidth=395&odnBg=FFFFFF" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">All school supplies</h5>
+    <p class="card-text">get what you need and will acually use</p>
+    <a href="#" class="btn btn-outline-dark">shop now</a>
+  </div>
+</div>
+</div>
+
+<div class="col col-xl-4 col-lg-8">
+<div class="card" style="width: 18rem;">
+    <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-e5e7/k2-_b04c403f-5576-4351-bbda-4dc3e96504da.v1.jpg?odnHeight=222&odnWidth=395&odnBg=FFFFFF" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Backpacks they'll love</h5>
+      <p class="card-text">Find cool colors, patterns, characters & more from $6.</p>
+      <a href="#" class="btn btn-outline-dark">shop now</a>
+    </div>
+  </div>
+</div>
+
+<div class="col col-xl-4 col-lg-8">
+  <div class="card" style="width: 18rem;">
+    <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-2489/k2-_8951e394-bf6e-4752-bd56-65fdfbb8d321.v1.jpg?odnHeight=222&odnWidth=395&odnBg=FFFFFF" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">  Pencil pouches</h5>
+      <p class="card-text">Keep their pens, markers & more in fun cases.</p>
+      <a href="#" class="btn btn-outline-dark">shop now</a>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!-- big card -->
+
+
+    <div class="row">
+        <h5>Got you covered, head to toe</h5>
+<div class="col col-xl-4 col-lg-8">
+<div class="card" style="width: 18rem;">
+  <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-1955/k2-_d48ea1fe-8c36-4310-8045-a439da9e19ca.v1.jpg?odnHeight=512&odnWidth=288&odnBg=FFFFFF" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">All school supplies</h5>
+    <p class="card-text">get what you need and will acually use</p>
+    <a href="#" class="btn btn-outline-dark">shop now</a>
+  </div>
+</div>
+</div>
+
+<div class="col col-xl-4 col-lg-8">
+<div class="card" style="width: 18rem;">
+    <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-2bbc/k2-_1f2a50c7-4bf4-481b-885e-93f5a9028d8b.v1.jpg?odnHeight=512&odnWidth=288&odnBg=FFFFFF" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Backpacks they'll love</h5>
+      <p class="card-text">Find cool colors, patterns, characters & more from $6.</p>
+      <a href="#" class="btn btn-outline-dark">shop now</a>
+    </div>
+  </div>
+</div>
+
+<div class="col col-xl-4 col-lg-8">
+  <div class="card" style="width: 18rem;">
+    <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-8f35/k2-_6e90793d-8ffe-482a-80b6-e17e9886a7b3.v1.jpg?odnHeight=512&odnWidth=288&odnBg=FFFFFF" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">  Pencil pouches</h5>
+      <p class="card-text">Keep their pens, markers & more in fun cases.</p>
+      <a href="#" class="btn btn-outline-dark">shop now</a>
+    </div>
+  </div>
+</div>
+</div>
+<br>
+<br>
+<div class="row">
+    <h5>Pens, pencils & more</h5>
+    <div class="col col-xl-2 col-lg-4 col-sm-8  ">
+        <a href="#" class="img-para"><img class="photoimg" src="https://i5.walmartimages.com/dfw/4ff9c6c9-3e9b/k2-_8ac5e9a9-9172-4a11-9fa4-6057fd149392.v1.jpg?odnHeight=290&odnWidth=290&odnBg=FFFFFF">
+            <br>
+            <p class="img-para">Pens from 94¢</p>
+            </a> 
+        </div>
+        <div class="col col-xl-2 col-lg-4 col-sm-8  ">
+            <a href="#" class="img-para"><img class="photoimg" src="https://i5.walmartimages.com/dfw/4ff9c6c9-dd9f/k2-_d73a3ded-2965-44da-8a55-b65144f993e8.v1.jpg?odnHeight=290&odnWidth=290&odnBg=FFFFFF">
+                <br>
+                <p class="img-para">Pencils & pencil sharpeners from 47¢</p>
+                </a> 
+            </div>
+            <div class="col col-xl-2 col-lg-4 col-sm-8  ">
+                <a href="#" class="img-para"><img class="photoimg" src="https://i5.walmartimages.com/dfw/4ff9c6c9-b9f1/k2-_7e31cc92-c72a-4880-b3b6-f7f793f384e8.v1.jpg?odnHeight=290&odnWidth=290&odnBg=FFFFFF">
+                    <br>
+                    <p class="img-para">Markers & highlighters from 88¢</p>
+                    </a> 
+                </div>
+                <div class="col col-xl-2 col-lg-4 col-sm-8  ">
+                    <a href="#" class="img-para"><img class="photoimg" src="https://i5.walmartimages.com/dfw/4ff9c6c9-b3e4/k2-_6f7c456d-bb7a-4804-a043-11f06e7bc6f0.v1.jpg?odnHeight=290&odnWidth=290&odnBg=FFFFFF">
+                        <br>
+                        <p class="img-para">Colored pencils from 54¢</p>
+                        </a> 
+                    </div>
+                    <div class="col col-xl-2 col-lg-4 col-sm-8  ">
+                        <a href="#" class="img-para"><img class="photoimg" src="https://i5.walmartimages.com/dfw/4ff9c6c9-bc7a/k2-_b0582d18-03d4-43ca-9cbe-a559d8bec357.v1.jpg?odnHeight=290&odnWidth=290&odnBg=FFFFFF">
+                            <br>
+                            <p class="img-para">Crayons from 25¢</p>
+                            </a> 
+                        </div>
+                        <div class="col col-xl-2 col-lg-4 col-sm-8  ">
+                            <a href="#" class="img-para"><img class="photoimg" src="https://i5.walmartimages.com/dfw/4ff9c6c9-a472/k2-_49aa90c8-a1eb-4eaa-bf1d-87c4d34baf5d.v1.jpg?odnHeight=290&odnWidth=290&odnBg=FFFFFF">
+                                <br>
+                                <p class="img-para">Glue sticks from 25¢</p>
+                                </a> 
+                        </div>
+    </div>
+    <br>
+    <hr>
+</div>
+
+<!-- </div>
+</div>
+  </div>
+       </div>
+    </div> -->
+</div>
+
+</main>
+    <footer>
+        <div class="footer-top">
+            <p>We’d love to hear what you think!</p>
+            <button>Give feedback</button>
+        </div>
+        <div class="footer-btm">
+            <div class="links">
+                <a href="#">All Departments</a>
+                <a href="#">Store Directory</a>
+                <a href="#">Careers</a>
+                <a href="#">Our Company</a>
+                <a href="#">Sell on Walmart.com</a>
+                <a href="#">COVID-19 Vaccine Scheduler</a>
+                <a href="#">Product Recalls</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Tax Exempt Program</a>
+                <a href="#">Get the Walmart App</a>
+                <a href="#">Sign-up for Email</a>
+                <a href="#">Safety Data Sheet</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy & Security</a>
+                <a href="#">CA Privacy Rights</a>
+                <a href="#">California Supply Chain Act</a>
+                <a href="#">Privacy choices iconYour Privacy Choices</a>
+                <a href="#">Notice at Collection</a>
+                <a href="#">Request My Personal Information</a>
+                <a href="#">Brand Shop Directory</a>
+                <a href="#">#IYWYK</a>
+            </div>
+            <p>© 2023 Walmart. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+<script src="./bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>    
+
+<script>
+    const sideNav = document.getElementById('sideNav');
+    const backDrop = document.getElementById('backDrop');
+    function showSideNav(){
+        sideNav.style.display = 'flex';
+        backDrop.style.display = 'flex';
+    }
+    function hideSideNav(){
+        sideNav.style.display = 'none';
+        backDrop.style.display = 'none';
+    }
+</script>
+    <script src="https://kit.fontawesome.com/f6798b3fdf.js" crossorigin="anonymous"></script>
+</body>
+</html>

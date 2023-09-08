@@ -339,33 +339,28 @@ i{
     position: relative;
 }
 #carousel {
-    
     transition: all .4s ease-in-out;
 }
-#carousel .fa-circle-right{
-    position: absolute;
-    right: 0;
+#carousel .fa-solid {
     top: 10rem;
-    padding: 5px;
-    color: white;
-    opacity: .7;
-    background-color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    opacity: .6;
     font-size: 2rem;
     z-index: 5;
     border-radius: 25px;
+    box-shadow: 1px 1px 4px 0px gray ;
 }
-#carousel .fa-circle-left{
+#carousel .fa-chevron-right{
+    display: block;
+    position: absolute;
+    right: 0;
+}
+
+#carousel .fa-chevron-left{
     display: none;
     position: absolute;
     left: 0;
-    top: 10rem;
-    padding: 5px;
-    color: white;
-    opacity: .7;
-    background-color: rgb(0, 0, 0);
-    font-size: 2rem;
-    z-index: 5;
-    border-radius: 25px;
+    
 }
 @media (max-width:1024px) {
 

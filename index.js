@@ -20,12 +20,21 @@ let next = document.getElementById('arrow')
 let prev = document.getElementById('arrow2')
 
 next.onclick = () =>{
-        let currentMargin = +carousel.style.marginLeft.split('p')[0]
-        carousel.style.marginLeft = `${currentMargin - 600}px`
+    let currentMargin = +carousel.style.marginLeft.split('p')[0]
+    if(currentMargin <= -1000){
+        next.style.display = 'none'
+    
+    } 
+    carousel.style.marginLeft = `${currentMargin - 600}px`
     prev.style.display = 'block'
+  
 }
 prev.onclick = () =>{
     let currentMargin = +carousel.style.marginLeft.split('p')[0]
+    if(currentMargin >= -1200){
+        next.style.display = 'block'
+    
+    } 
     carousel.style.marginLeft = `${currentMargin + 600}px`
     if(carousel.style.marginLeft === '0px'){
         prev.style.display = 'none'

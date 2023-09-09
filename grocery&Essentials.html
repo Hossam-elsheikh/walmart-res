@@ -8,14 +8,24 @@
     <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <style>
-        .c li{
+        .c li {
             list-style: none;
             display: flex;
-        flex-direction: column;
-        margin-left: 60px;
+            flex-direction: column;
+            margin-left: 60px;
         }
-        .c li:hover{
+
+        .c li:hover {
             text-decoration: underline 1px;
+        }
+
+        .width {
+            width: 120px;
+        }
+        .noDe{
+            text-decoration: none;
+            color: black;
+            
         }
     </style>
     <title>Essentails</title>
@@ -194,53 +204,60 @@
             </nav>
         </div>
     </header>
-    <main >
+    <main>
         <div class="d-flex justify-content-center m-5">
-            <div class="col-10">
-                <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-db40/k2-_faad9df2-7dc0-41fd-86e5-cb5d9d0dcc4c.v1.jpg" class="w-100">
+            <!-- <div class="col-10">
+                <div class="" style="z-index:1;">
+                    <p class="h1">Express delivery until 10pm!</p>
+                    <span>Get everything you need—even later.</span><br>
+                    <a>Book a timeslot</a>
+                </div> -->
+
+                <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-db40/k2-_faad9df2-7dc0-41fd-86e5-cb5d9d0dcc4c.v1.jpg"
+                    class="w-100" style="z-index: 0" ;>
             </div>
         </div>
         <div class="m-5">
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <span>Categories</span>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <span class="h4 m-5 fw-bold">Categories</span>
                     <hr>
                     <div class="dropdown">
-                        <button class=" btn border border-white" type="button" 
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class=" btn border border-white" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             <div class="">
                                 <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-877b/k2-_17060cce-fa02-455e-a0be-eda182b82de2.v1.jpg"
                                     class="w-25 rounded-circle">
                                 <span class="ms-1 me-3">Fresh Food</span>
                                 <i class="fa-solid fa-chevron-down ms-5"></i>
                             </div>
-    
+
                         </button>
-    
+
                         <ul class="c ms-3 border border-white" style="display: none;">
-                            <li><a class="dropdown-item "  href="#">Shop All</a></li>
+                            <li><a class="dropdown-item " href="#">Shop All</a></li>
                             <li><a class="dropdown-item" href="#">Fresh Produce</a></li>
                             <li><a class="dropdown-item" href="#">Meat & Seafood</a></li>
                             <li><a class="dropdown-item" href="#">Deil</a></li>
                             <li><a class="dropdown-item" href="#">Dairy & Eggs</a></li>
                             <li><a class="dropdown-item" href="#">Bakery & Bread</a></li>
-    
+
                         </ul>
                     </div>
-    
+
                     <hr>
                     <div class="dropdown">
-                        <button class="btn border border-white" type="button" 
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn border border-white" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             <div class="">
                                 <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-c6c4/k2-_c2e2e6f7-2f6e-4f2d-9351-e581fb947588.v1.jpg"
                                     class="w-25 rounded-circle">
                                 <span class="me-2 ms-2">Pantry & Snacks</span>
                                 <i class="fa-solid fa-chevron-down ms-3"></i>
                             </div>
-    
+
                         </button>
-    
+
                         <ul class="c ms-3 border border-white" style="display: none;">
                             <li><a class="dropdown-item" href="#">Snacks</a></li>
                             <li><a class="dropdown-item" href="#">Pantry</a></li>
@@ -251,17 +268,17 @@
                     </div>
                     <hr>
                     <div class="dropdown">
-                        <button class="btn border border-white" type="button" 
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn border border-white" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             <div class="">
                                 <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-f754/k2-_ae5145df-fcf4-4bd2-9512-3e6078153722.v1.jpg"
                                     class="w-25 rounded-circle">
                                 <span class="me-5 ms-2">Frezon</span>
                                 <i class="fa-solid fa-chevron-down ms-5"></i>
                             </div>
-    
+
                         </button>
-    
+
                         <ul class="c ms-3 border border-white" style="display: none;">
                             <li><a class="dropdown-item" href="#">Shop All</a></li>
                             <li><a class="dropdown-item" href="#">Frezon Breakfast</a></li>
@@ -272,22 +289,22 @@
                             <li><a class="dropdown-item" href="#">Frezon Produce</a></li>
                             <li><a class="dropdown-item" href="#">Frezon Meat Seafood & Vegetarian</a></li>
                             <li><a class="dropdown-item" href="#">Frezon Potatoes</a></li>
-    
+
                         </ul>
                     </div>
                     <hr>
                     <div class="dropdown">
-                        <button class="btn border border-white" type="button" 
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn border border-white" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             <div class="">
                                 <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-2a8e/k2-_9de384d1-e00a-45db-b90e-d420ce543078.v1.jpg"
                                     class="w-25 rounded-circle">
                                 <span class="ms-2 me-5">Beverages</span>
                                 <i class="fa-solid fa-chevron-down ms-3"></i>
                             </div>
-    
+
                         </button>
-    
+
                         <ul class="c ms-3 border border-white" style="display: none;">
                             <li><a class="dropdown-item" href="#">Shop All</a></li>
                             <li><a class="dropdown-item" href="#">Soda Pop</a></li>
@@ -302,25 +319,25 @@
                             <li><a class="dropdown-item" href="#"> Coffee</a></li>
                             <li><a class="dropdown-item" href="#"> Tea</a></li>
                             <li><a class="dropdown-item" href="#"> Milk</a></li>
-    
-    
-    
-    
+
+
+
+
                         </ul>
                     </div>
                     <hr>
                     <div class="dropdown">
-                        <button class="btn border border-white" type="button" 
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn border border-white" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             <div class="">
                                 <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-98fc/k2-_38e060ca-3233-45ff-a84d-a10538dd85cd.v1.jpg"
                                     class="w-25 rounded-circle">
                                 <span class="ms-2 me-5"> Grab & Go</span>
                                 <i class="fa-solid fa-chevron-down ms-3"></i>
                             </div>
-    
+
                         </button>
-    
+
                         <ul class="c ms-3 border border-white" style="display: none;">
                             <li><a class="dropdown-item" href="#">Sandwiches</a></li>
                             <li><a class="dropdown-item" href="#"> Salads</a></li>
@@ -336,20 +353,20 @@
                             <li><a class="dropdown-item" href="#"> Gift Cards</a></li>
                         </ul>
                     </div>
-    
+
                     <hr>
                     <div class="dropdown">
-                        <button class="btn border border-white" type="button" 
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn border border-white" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             <div class="">
                                 <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-9531/k2-_cb0e0b32-98a7-47b0-bb58-9138586ad9cc.v1.jpg"
                                     class="w-25 rounded-circle">
                                 <span class=" me-3">Household Essentials</span>
                                 <i class="fa-solid fa-chevron-down"></i>
                             </div>
-    
+
                         </button>
-    
+
                         <ul class="c ms-3 border border-white" style="display: none;">
                             <li><a class="dropdown-item" href="#">Sandwiches</a></li>
                             <li><a class="dropdown-item" href="#"> Salads</a></li>
@@ -367,15 +384,15 @@
                     </div>
                     <hr>
                     <div class="dropdown">
-                        <button class="btn border border-white" type="button" 
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn border border-white" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             <div class="">
                                 <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-e34c/k2-_181cd831-fe71-489d-bcbe-0916f8966e0b.v1.jpg"
                                     class="w-25 rounded-circle">
                                 <span class=" ms-2 me-2"> Health & Wellness</span>
                                 <i class="fa-solid fa-chevron-down ms-4"></i>
                             </div>
-    
+
                         </button>
                         <ul class="c ms-3 border border-white" style="display: none;">
                             <li><a class="dropdown-item" href="#">Shop All Health</a></li>
@@ -395,20 +412,20 @@
                             <li><a class="dropdown-item" href="#"> Weight Management</a></li>
                         </ul>
                     </div>
-    
+
                     <hr>
                     <div class="dropdown">
-                        <button class="btn border border-white" type="button" 
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn border border-white" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             <div class="">
                                 <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-59dd/k2-_0bc8ec7a-1a0a-4e84-8b92-bf3c59d33e98.v1.jpg"
                                     class="w-25 rounded-circle">
                                 <span class="ms-2 me-5"> Personal Care</span>
                                 <i class="fa-solid fa-chevron-down ms-3"></i>
                             </div>
-    
+
                         </button>
-    
+
                         <ul class="c ms-3 border border-white" style="display: none;">
                             <li><a class="dropdown-item" href="#">Shop All</a></li>
                             <li><a class="dropdown-item" href="#"> Shop Multipacks</a></li>
@@ -423,17 +440,17 @@
                     </div>
                     <hr>
                     <div class="dropdown">
-                        <button class="btn border border-white" type="button" 
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn border border-white" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             <div class="">
                                 <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-d11d/k2-_0df859fc-5ca2-4758-9e4e-8e6f10d18125.v1.jpg"
                                     class="w-25 rounded-circle">
                                 <span class="ms-3 me-5">Beauty</span>
                                 <i class="fa-solid fa-chevron-down ms-5"></i>
                             </div>
-    
+
                         </button>
-    
+
                         <ul class="c ms-3 border border-white" style="display: none;">
                             <li><a class="dropdown-item" href="#">Shop All</a></li>
                             <li><a class="dropdown-item" href="#"> Premium Beauty</a></li>
@@ -445,24 +462,24 @@
                             <li><a class="dropdown-item" href="#">Nail Care</a></li>
                             <li><a class="dropdown-item" href="#">Men's Grooming</a></li>
                             <li><a class="dropdown-item" href="#">Beauty Box - Subscribe Now!</a></li>
-    
-    
+
+
                         </ul>
                     </div>
-    
+
                     <hr>
                     <div class="dropdown">
-                        <button class="btn border border-white" type="button" 
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn border border-white" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             <div class="">
                                 <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-4df5/k2-_0a79f475-b97d-4f9a-87b7-3fbe4d874a5d.v1.jpg"
                                     class="w-25 rounded-circle">
                                 <span class="ms-3 me-5"> Pets</span>
                                 <i class="fa-solid fa-chevron-down ms-5"></i>
                             </div>
-    
+
                         </button>
-    
+
                         <ul class="c ms-3 border border-white" style="display: none;">
                             <li><a class="dropdown-item" href="#">Shop All</a></li>
                             <li><a class="dropdown-item" href="#"> Dog</a></li>
@@ -474,23 +491,23 @@
                             <li><a class="dropdown-item" href="#">Horse</a></li>
                             <li><a class="dropdown-item" href="#">Farm Animal</a></li>
                             <li><a class="dropdown-item" href="#">Pet Care Services</a></li>
-    
-    
+
+
                         </ul>
                     </div>
                     <hr>
                     <div class="dropdown">
-                        <button class="btn border border-white" type="button" 
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn border border-white" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             <div class="">
                                 <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-e81b/k2-_9e4c4cfe-405a-48ad-9500-39ba911997fc.v1.jpg"
                                     class="w-25 rounded-circle">
                                 <span class="ms-3 me-5">Baby</span>
                                 <i class="fa-solid fa-chevron-down ms-5"></i>
                             </div>
-    
+
                         </button>
-    
+
                         <ul class="c ms-3 border border-white" style="display: none;">
                             <li><a class="dropdown-item" href="#">Shop All</a></li>
                             <li><a class="dropdown-item" href="#">EBT Eligible</a></li>
@@ -509,20 +526,20 @@
                             <li><a class="dropdown-item" href="#">Baby Gift Ideas</a></li>
                         </ul>
                     </div>
-    
+
                     <hr>
                     <div class="dropdown">
-                        <button class="btn border border-white" type="button" 
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn border border-white" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             <div class="">
                                 <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-9022/k2-_a0ae7752-69ef-4f3f-8a9a-6292478fc0ae.v1.jpg"
                                     class="w-25 rounded-circle">
                                 <span class="ms-3 me-5">Fashion</span>
                                 <i class="fa-solid fa-chevron-down ms-5"></i>
                             </div>
-    
+
                         </button>
-    
+
                         <ul class="c ms-3 border border-white" style="display: none;">
                             <li><a class="dropdown-item" href="#">Shop All</a></li>
                             <li><a class="dropdown-item" href="#">Women</a></li>
@@ -539,13 +556,107 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-9 col-md-6 col-sm-6">
-                    <span>Shop groceries</span>
-                </div>
-            </div>
+                <div class="col-lg-9">
+                    <span class="h4 mb-3 fw-bold">Shop groceries</span>
+                    <div class=" mt-1 d-flex flex-wrap justify-content-evenly">
+                        <div class="col-lg-1 col-md-4 col-sm-4 mb-3" style="text-align: center;">
+                            <a href="#" class="noDe"><img
+                                    src="https://i5.walmartimages.com/dfw/4ff9c6c9-6a9c/k2-_752a86d4-3dad-4536-a126-575ff0fdc50b.v1.jpg"
+                                    class=" rounded-circle width"> <span class="ms-1">Fresh food</span>
+                            </a>
+                           
+                        </div>
+                        <div class=" col-lg-1 col-md-4 col-sm-4 mb-3" style="text-align: center;">
+                            <a href="#" class="noDe"><img
+                                    src="https://i5.walmartimages.com/dfw/4ff9c6c9-1f62/k2-_14026032-82a9-4a17-9002-c4f978bcdd55.v1.jpg"
+                                    class=" rounded-circle width"><span>Meat & seafood</span>
+                            </a>
+                            
+                        </div>
+                        <div class=" col-lg-1 col-md-4 col-sm-4 mb-3" style="text-align: center;">
+                            <a href="#" class="noDe"><img
+                                    src="https://i5.walmartimages.com/dfw/4ff9c6c9-5e8e/k2-_877cd1de-03d3-44c0-b4ba-08f2d445ca1a.v1.jpg"
+                                    class=" rounded-circle width"> <span>Pantry staples</span>
+                            </a>
+                           
+                        </div>
+
+                        <div class="col-lg-1 col-md-4 col-sm-4 mb-3" style="text-align: center;">
+                            <a href="#" class="noDe"><img
+                                    src="https://i5.walmartimages.com/dfw/4ff9c6c9-c329/k2-_ad6d86dc-49d4-4b2b-a6a6-e367982a545a.v1.jpg"
+                                    class=" rounded-circle width"><span >Frozen food</span>
+                            </a>
+                            
+                        </div>
+                        <div class=" col-lg-1 col-md-4 col-sm-4 mb-3" style="text-align: center;">
+                            <a href="#" class="noDe"><img
+                                    src="https://i5.walmartimages.com/dfw/4ff9c6c9-6a58/k2-_1843eb53-fd23-4a47-bf8a-9d7e9077995a.v1.jpg"
+                                    class=" rounded-circle width"> <span >Deli</span>
+                            </a>
+                           
+                        </div>
+                        <div class="col-lg-1 col-md-4 col-sm-4 mb-3" style="text-align: center;">
+                            <a href="#" class="noDe"><img
+                                    src="https://i5.walmartimages.com/dfw/4ff9c6c9-b07e/k2-_a32048d4-a2ce-479a-84ec-bdee70018dee.v1.jpg"
+                                    class=" rounded-circle width">  <span >Snacks</span>
+                            </a>
+                          
+                        </div>
+                    </div>
+                    <hr>
+                    <span class=" mt-5 h4 mb-3 fw-bold">Shop essentials</span>
+                    <div class=" mt-1 d-flex flex-wrap justify-content-evenly">
+                        <div class="col-lg-1 col-md-4 col-sm-4 mb-3" style="text-align: center;">
+                            <a href="#" class="noDe"><img
+                                    src="https://i5.walmartimages.com/dfw/4ff9c6c9-e0b8/k2-_488b974e-0374-4825-9c7a-19c549c316bb.v1.jpg"
+                                    class=" rounded-circle width"><span>Household essentials</span>
+                            </a>
+                            
+                        </div>
+                        <div class=" col-lg-1 col-md-4 col-sm-4 mb-3"  style="text-align: center;">
+                            <a href="#" class="noDe"><img
+                                    src="https://i5.walmartimages.com/dfw/4ff9c6c9-c4d8/k2-_9dc18ca2-fc5c-4309-9de2-3ab75912c450.v1.jpg"
+                                    class=" rounded-circle width"> <span>Personal care</span>
+                            </a>
+                           
+                        </div>
+                        <div class=" col-lg-1 col-md-4 col-sm-4 mb-3"  style="text-align: center;">
+                            <a href="#" class="noDe"><img
+                                    src="https://i5.walmartimages.com/dfw/4ff9c6c9-700a/k2-_b6fb4544-56c0-4a3e-abbd-d3bcdc388a93.v1.jpg"
+                                    class=" rounded-circle width"><span>Health & wellness</span>
+                            </a>
+                            
+                        </div>
+
+                        <div class="col-lg-1 col-md-4 col-sm-4 mb-3"  style="text-align: center;">
+                            <a href="#" class="noDe"><img
+                                    src="https://i5.walmartimages.com/dfw/4ff9c6c9-fdf9/k2-_905ff289-9ac7-4b55-b3cc-85b6ca1ba218.v1.jpg"
+                                    class=" rounded-circle width"><span>Pet supplies</span>
+                            </a>
+                            
+                        </div>
+                        <div class=" col-lg-1 col-md-4 col-sm-4 mb-3"  style="text-align: center;">
+                            <a href="#" class="noDe"><img
+                                    src="https://i5.walmartimages.com/dfw/4ff9c6c9-63e5/k2-_650e75ed-4665-4475-a25d-b00915b7703e.v1.jpg"
+                                    class=" rounded-circle width"> <span>Beauty Glow-Up Event</span>
+                            </a>
+                           
+                        </div>
+                        <div class="col-lg-1 col-md-4 col-sm-4 mb-3"  style="text-align: center;">
+                            <a href="#" class="noDe"><img
+                                    src="https://i5.walmartimages.com/dfw/4ff9c6c9-20bf/k2-_2a94ab28-2ad4-4ac9-877f-2ee8922f294d.v1.jpg"
+                                    class=" rounded-circle width"> <span>Baby</span>
+                            </a>
+                           
+                        </div>
+                    </div>
+                    <hr>
+                    <span class="h4 mb-3 fw-bold">Featured manufacturer offers</span>
+                </div> 
+            </div>    
         </div>
     </main>
-   
+
     <footer>
         <div class="footer-top">
             <p>We’d love to hear what you think!</p>
@@ -592,15 +703,15 @@
             });
         }
         const sideNav = document.getElementById('sideNav');
-    const backDrop = document.getElementById('backDrop');
-    function showSideNav(){
-        sideNav.style.display = 'flex';
-        backDrop.style.display = 'flex';
-    }
-    function hideSideNav(){
-        sideNav.style.display = 'none';
-        backDrop.style.display = 'none';
-    }
+        const backDrop = document.getElementById('backDrop');
+        function showSideNav() {
+            sideNav.style.display = 'flex';
+            backDrop.style.display = 'flex';
+        }
+        function hideSideNav() {
+            sideNav.style.display = 'none';
+            backDrop.style.display = 'none';
+        }
     </script>
     <script src="https://kit.fontawesome.com/f6798b3fdf.js" crossorigin="anonymous"></script>
     <script src="bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>

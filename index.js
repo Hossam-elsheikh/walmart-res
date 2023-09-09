@@ -1,23 +1,33 @@
-import { products } from "./products.js";
-console.log(products);
+// import { products } from "./products.js";
+
 let carousels = document.getElementsByClassName("caro");
 let next = document.getElementsByClassName("arrow");
 let prev = document.getElementsByClassName("arrow2");
+
+fetch("https://dummyjson.com/products")
+  .then((res) => res.json())
+  .then((res) => {
+    let products = res.products
+    console.log(products);
 for (let i = 0; i < carousels.length; i++) {
   products.forEach((product) => {
     let item = document.createElement("div");
     item.classList.add("item");
     item.innerHTML = `
         <i class="fa-regular fa-heart"></i>
-        <img src="${product.img}" alt="">
-        <p>${product.price}</p>
-        <p>${product.options}</p>
+        <div class="img">
+        <img src="${product.images[0]}" alt="">
+        </div>
+        <p>$${product.price}</p>
+        <p>${product.description}</p>
         <p>${product.title}</p>
         <button class="walBtn">Options</button>
         `;
     carousels[i].appendChild(item);
   });
 }
+  });
+
 
 function slideNext(x, y) {
   let currentMargin = +carousels[x].style.marginLeft.split("p")[0];
@@ -40,19 +50,19 @@ function slidePrev(x, y) {
 }
 
 next[0].onclick = () => {
-  slideNext(0, -1000);
+  slideNext(0, -5000);
 };
 
 prev[0].onclick = () => {
-  slidePrev(0, -1200);
+  slidePrev(0, -5500);
 };
 
 next[1].onclick = () => {
-  slideNext(1, -2000);
+  slideNext(1, -6000);
 };
 
 prev[1].onclick = () => {
-  slidePrev(1, -2500);
+  slidePrev(1, -6000);
 };
 
 // video play

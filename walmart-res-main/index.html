@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.3.1-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="sideNav" onclick="hideSideNav()" class="nav-side">
+      <div class="item">
+        <img
+          class="logo"
+          src="https://static.vecteezy.com/system/resources/previews/022/100/282/original/walmart-logo-transparent-free-png.png"
+        />
+        <h2>Hi, User</h2>
+      </div>
+      <div class="items">
+        <a href="#" class="walmart item">
+          <img
+            class="logo"
+            src="https://i5.walmartimages.com/dfw/63fd9f59-ac39/29c6759d-7f14-49fa-bd3a-b870eb4fb8fb/v1/wplus-icon-blue.svg"
+          />
+          <p>Walmart +</p>
+        </a>
+        <hr />
+        <a href="#" class="item">
+          <i class="fa-solid fa-receipt"></i>
+          <p>Purchase History</p>
+        </a>
+        <a href="#" class="item" style="margin-left: -5px">
+          <i class="fa-solid fa-file-import"></i>
+          <p>My items</p>
+        </a>
+        <a href="#" class="item">
+          <i class="fa-regular fa-user"></i>
+          <p>Account</p>
+        </a>
+        <hr />
+        <a href="#" class="item">
+          <i class="fa-regular fa-circle-question"></i>
+          <p>Help</p>
+        </a>
+        <hr />
+        <a href="#" class="item">
+          <i class="fa-regular fa-heart"></i>
+          <p>Lists</p>
+        </a>
+        <a href="#" class="item">
+          <i class="fa-solid fa-gift"></i>
+          <p>Registries</p>
+        </a>
+        <hr />
+        <div class="nav-list">
+          <div href="#" class="item">
+            <i class="fa-solid fa-square-poll-horizontal"></i>
+            <p>Departments</p>
+          </div>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="nav-list">
+          <div href="#" class="item">
+            <i class="fa-solid fa-hand-holding-medical"></i>
+            <p>Services</p>
+          </div>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <hr />
+        <a href="#" class="item">
+          <i class="fa-regular fa-comment"></i>
+          <p>Give feedback</p>
+        </a>
+        <hr />
+        <a href="#" class="item">
+          <i class="fa-solid fa-right-to-bracket"></i>
+          <p>Sign out</p>
+        </a>
+      </div>
+    </div>
+    <div id="backDrop" onclick="hideSideNav()"></div>
+    <header>
+      <div class="main-nav">
+        <div class="show-md" onclick="showSideNav()">
+          <i
+            class="fa-solid fa-bars"
+            style="color: white; font-size: 25px; cursor: pointer"
+          ></i>
+        </div>
+
+        <div class="elem hide-md">
+          <a href="./index.html"
+            ><img class="logo" src="./assets/logo.png.png"
+          /></a>
+        </div>
+
+        <img
+          class="logo show-md"
+          src="https://static.vecteezy.com/system/resources/previews/022/100/282/original/walmart-logo-transparent-free-png.png"
+        />
+
+        <div class="elem hide-md">
+          <i class="fa-solid fa-square-poll-horizontal"></i>
+          <p>Departments</p>
+        </div>
+        <div class="elem hide-md">
+          <i class="fa-solid fa-hand-holding-medical"></i>
+          <p>Services</p>
+        </div>
+        <div class="search">
+          <input
+            type="search"
+            placeholder="Search everything at Walmart online and in the store"
+          />
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <div class="elem hide-md">
+          <i class="fa-regular fa-heart"></i>
+          <div class="txt">
+            <span>Reorder</span>
+            <p>My Items</p>
+          </div>
+        </div>
+        <div class="elem hide-md">
+          <i class="fa-regular fa-user"></i>
+          <div class="txt">
+            <span>Hi, user</span>
+            <p>Account</p>
+            <p></p>
+          </div>
+        </div>
+        <div class="elem">
+          <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>$0,00</span>
+          </div>
+        </div>
+      </div>
+      <div class="sec-nav">
+        <div class="ship">
+          <i class="fa-solid fa-truck"></i>
+          <p>How do you want your items?</p>
+          <i class="fa-solid fa-chevron-down"></i>
+          <p class="address">
+            | &nbsp<i class="fa-solid fa-location-dot"></i> &nbsp Sacramento,
+            98326 &nbsp<i class="fa-solid fa-house"></i>&nbsp Sacremnto,
+            Supercenter
+          </p>
+        </div>
+        <nav class="hide-md">
+          <ul>
+            <li><a href="#">Deals</a></li>
+            <li id="dis1">
+              <a href="./grocery&Essentials.html">Grocery & Essentials</a>
+            </li>
+            <li id="dis4"><a href="./back.html">Back to School</a></li>
+            <li><a href="#">Halloween</a></li>
+            <li id="dis2">
+              <a href="./Top-Toys/top-toys.html">Top Toy list</a>
+            </li>
+            <li id="dis3"><a href="#">Beauty Glow up</a></li>
+            <li><a href="#">Fashion</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Registry</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container-fluid p-3">
+      <div class="row">
+        <div class="col-md-3 mb-3 col-sm-12 d-flex flex-column gap-4">
+          <div class="card text-bg-dark" style="border: none">
+            <img
+              src="https://i5.walmartimages.com/dfw/4ff9c6c9-19f8/k2-_79955821-256a-4e04-9c04-2c50f8a91140.v1.jpg?odnHeight=512"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-img-overlay p-4">
+              <h5 class="card-title" style="font-weight: bold">
+                Sports scores from $17
+              </h5>
+              <a class="card-text nav-link" style="text-decoration: underline"
+                ><small>Shop now</small></a
+              >
+            </div>
+          </div>
+          <div class="card text-bg-light" style="border: none">
+            <img
+              src="https://i5.walmartimages.com/dfw/4ff9c6c9-475a/k2-_12602539-cb08-4a03-82dc-76c9fa5662b2.v1.jpg"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-img-overlay p-4">
+              <h3 class="card-title" style="font-weight: bold">
+                Mattress at dreamy prices
+              </h3>
+              <a class="card-text nav-link text-decoration-underline"
+                ><small>shop now</small></a
+              >
+            </div>
+          </div>
+          <div class="card text-bg-light" style="border: none">
+            <img
+              src="https://i5.walmartimages.com/dfw/4ff9c6c9-a28d/k2-_7a2ce6b0-d15b-41cf-bad7-6e92826e959e.v1.jpg?odnHeight=216&odnWidth=385&odnBg=&odnDynImageQuality=70"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-img-overlay p-4">
+              <h2 class="card-title" style="font-weight: bold">
+                Afordable tot <br />
+                favs
+              </h2>
+              <a class="card-text nav-link text-decoration-underline"
+                ><small>shop now</small></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3 col-sm-12">
+          <div class="row d-flex flex-column gap-4">
+            <div class="col">
+              <div class="card text-bg-light" style="border: none">
+                <img
+                  src="https://i5.walmartimages.com/dfw/4ff9c6c9-5558/k2-_122014e9-1d0c-4d17-8870-73a0d83d943d.v1.jpg?odnHeight=447"
+                  class="card-img"
+                  alt="..."
+                />
+                <div class="card-img-overlay p-4">
+                  <h3 class="card-title" style="font-size: 3.5rem">
+                    Hello, fall savings
+                  </h3>
+                  <a class="card-text nav-link text-decoration-underline"
+                    ><small>Shop now</small></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex gap-4">
+              <div class="card text-bg-dark w-50" style="border: none">
+                <img
+                  src="https://i5.walmartimages.com/dfw/4ff9c6c9-5706/k2-_24d24bd6-705b-4745-a840-7afe5614a00f.v1.jpg?odnHeight=388"
+                  class="card-img"
+                  alt="..."
+                />
+                <div class="card-img-overlay p-4">
+                  <h4 class="card-title" style="font-weight: bold">
+                    High tech, low spend
+                  </h4>
+                  <a class="card-text nav-link text-decoration-underline"
+                    ><small>Shop now</small></a
+                  >
+                </div>
+              </div>
+              <div class="card text-bg-light w-50" style="border: none">
+                <img
+                  src="https://i5.walmartimages.com/dfw/4ff9c6c9-b65c/k2-_0b51d982-a106-47fb-95e0-4196fa967d4c.v1.jpg?odnHeight=578&odnWidth=385&odnBg=&odnDynImageQuality=70"
+                  class="card-img"
+                  alt="..."
+                />
+                <div class="card-img-overlay p-4">
+                  <h4 class="card-title" style="font-weight: bold">
+                    Up to 65% off
+                  </h4>
+                  <a class="card-text nav-link text-decoration-underline"
+                    ><small>Shop now</small></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card text-bg-light" style="border: none">
+              <img
+                src="https://i5.walmartimages.com/dfw/4ff9c6c9-21d7/k2-_010ce435-9cfa-4871-98d9-b58993dee070.v1.jpg?odnHeight=216&odnWidth=794&odnBg=&odnDynImageQuality=70"
+                class="card-img"
+                alt="..."
+              />
+              <div class="card-img-overlay p-4">
+                <h3 class="card-title">
+                  Members get free shipping with no order <br />
+                  minimum!
+                </h3>
+                <a class="card-text nav-link"><small>Terms apply.</small></a>
+                <a class="card-text nav-link text-decoration-underline"
+                  ><small>Join walmart+</small></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3 col-sm-12 d-flex flex-column gap-4">
+          <div class="card text-bg-light" style="border: none">
+            <img
+              src="https://i5.walmartimages.com/dfw/4ff9c6c9-a3ce/k2-_a030d5b9-1e9f-4bb7-bc82-af0e9ce626b7.v1.jpg"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-img-overlay p-4">
+              <h3 class="card-title" style="font-weight: bold">
+                Fall style under <br />
+                budget
+              </h3>
+              <a class="card-text nav-link" style="text-decoration: underline"
+                ><small>Shop now</small></a
+              >
+            </div>
+          </div>
+          <div class="card text-bg-light" style="border: none">
+            <img
+              src="https://i5.walmartimages.com/dfw/4ff9c6c9-f512/k2-_f0538edc-0cd6-42e5-b1fd-3df0aa5ba575.v1.jpg?odnHeight=256"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-img-overlay p-4">
+              <h4 class="card-title" style="font-weight: bold">
+                Cozy home decore
+              </h4>
+              <a class="card-text nav-link text-decoration-underline"
+                ><small>shop now</small></a
+              >
+            </div>
+          </div>
+          <div class="card text-bg-light" style="border: none">
+            <img
+              src="https://i5.walmartimages.com/dfw/4ff9c6c9-f45d/k2-_67dcec85-5a08-41b4-b40c-a18a1ab33d28.v1.jpg?odnHeight=578"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-img-overlay p-4">
+              <h3 class="card-title" style="font-weight: bold">
+                Hamilton beach for way <br />
+                less
+              </h3>
+              <a class="card-text nav-link text-decoration-underline"
+                ><small>Save now</small></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- carousel -->
+      <div class="container-fluid">
+        <div
+          class="container-fluid d-flex justify-content-between align-items-center"
+        >
+          <div>
+            <h2>Weekly Deals</h2>
+            <p>Up to 65% off</p>
+          </div>
+          <a href="#" class="nav-link text-decoration-underline">View all</a>
+        </div>
+        <div class="carousel-container container-fluid overflow-hidden">
+          <div
+            class="d-flex gap-4 overflow-hidden p-4 caro"
+            style="margin-left: 0"
+          >
+            <i class="fa-solid fa-chevron-right arrow"></i>
+            <i class="fa-solid fa-chevron-left arrow2"></i>
+            <div class="item"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row d-flex align-items-center">
+          <div class="carousel-container col-md-6 col-sm-12 overflow-hidden">
+            <div
+              class="d-flex gap-4 overflow-hidden p-4 caro"
+              style="margin-left: 0"
+            >
+              <i class="fa-solid fa-chevron-right arrow"></i>
+              <i class="fa-solid fa-chevron-left arrow2"></i>
+              <div class="item"></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 video">
+            <div class="controls">
+              <i class="fa-solid fa-circle-play"></i>
+              <i class="fa-solid fa-volume-low"></i>
+            </div>
+            <video
+              id="vid"
+              style="border-radius: 20px"
+              width="100%"
+              height="100%"
+            >
+              <source src="./assets/vid.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-top">
+        <p>We’d love to hear what you think!</p>
+        <button>Give feedback</button>
+      </div>
+      <div class="footer-btm">
+        <div class="links">
+          <a href="#">All Departments</a>
+          <a href="#">Store Directory</a>
+          <a href="#">Careers</a>
+          <a href="#">Our Company</a>
+          <a href="#">Sell on Walmart.com</a>
+          <a href="#">COVID-19 Vaccine Scheduler</a>
+          <a href="#">Product Recalls</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Tax Exempt Program</a>
+          <a href="#">Get the Walmart App</a>
+          <a href="#">Sign-up for Email</a>
+          <a href="#">Safety Data Sheet</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy & Security</a>
+          <a href="#">CA Privacy Rights</a>
+          <a href="#">California Supply Chain Act</a>
+          <a href="#">Privacy choices iconYour Privacy Choices</a>
+          <a href="#">Notice at Collection</a>
+          <a href="#">Request My Personal Information</a>
+          <a href="#">Brand Shop Directory</a>
+          <a href="#">#IYWYK</a>
+        </div>
+        <p>© 2023 Walmart. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script>
+      const sideNav = document.getElementById("sideNav");
+      const backDrop = document.getElementById("backDrop");
+      function showSideNav() {
+        sideNav.style.display = "flex";
+        backDrop.style.display = "flex";
+      }
+      function hideSideNav() {
+        sideNav.style.display = "none";
+        backDrop.style.display = "none";
+      }
+    </script>
+    <script
+      src="https://kit.fontawesome.com/f6798b3fdf.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>

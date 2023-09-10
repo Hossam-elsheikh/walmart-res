@@ -171,10 +171,13 @@
         </nav>
       </div>
     </header>
+    <div class="mainContainer">
+      
+   
     <main class="container-fluid p-4">
-      <div class="container-fluid heading ">
+      <div class="container-fluid heading">
         <img
-        class="img-fluid"
+          class="img-fluid"
           src="https://i5.walmartimages.com/dfw/4ff9c6c9-a269/k2-_12a00f41-a9fc-4eb7-b68b-f45c8e36beaf.v1.jpg"
         />
         <div class="text">
@@ -183,7 +186,7 @@
           <a href="#">Shop all</a>
         </div>
       </div>
-      <div class="container p-5 cats ">
+      <div class="container p-5 cats">
         <h5 class="main-title">Shop by Category</h5>
         <div class="categories d-flex gap-4 flex-wrap justify-content-center">
           <div class="cat d-flex flex-column align-items-center gap-1">
@@ -246,20 +249,53 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3 d-flex flex-column gap-1">
-            <h5 style="font-weight: bold;">Haloween Ideas</h5>
+            <h5 style="font-weight: bold">Haloween Ideas</h5>
             <hr />
-            <div id="categoriesHolder" class="d-flex flex-column gap-2">
-              
+            <div id="categoriesHolder" class="d-flex flex-column gap-2"></div>
+          </div>
+          <div class="col-md-9">
+            <h5 style="font-weight: bold;">The Haunt is on</h5>
+            <div class="d-flex gap-4 p-4">
+
+              <div class="card" style="width: 18rem">
+                <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-eb17/k2-_b27f5442-caea-4408-98e0-acb006220474.v1.jpg?odnHeight=222&odnWidth=395&odnBg=FFFFFF" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 style="font-weight: bold;" class="card-title">Kids' costumes from $5</h5>
+                  <p class="card-text">
+                    Get more boo for your buck.
+                  </p>
+                  <a href="#" class="btnWalmart text-decoration-none">Shop now</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-e511/k2-_ca39b7a7-1eb0-44d7-9d03-877cafbe6db0.v1.jpg?odnHeight=222&odnWidth=395&odnBg=FFFFFF" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 style="font-weight: bold;" class="card-title">Candy under $10</h5>
+                  <p class="card-text">
+                    Treat their sweet tooth for way less.
+                  </p>
+                  <a href="#" class="btnWalmart text-decoration-none">Shop now</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-9cec/k2-_0efc9377-4092-4587-9d5e-6cd441e77f0b.v1.jpg?odnHeight=222&odnWidth=395&odnBg=FFFFFF" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 style="font-weight: bold;" class="card-title">Accessories from $0.98</h5>
+                  <p class="card-text">
+                   Complete your look with wicked-good prices.
+                  </p>
+                  <a href="#" class="btnWalmart text-decoration-none">Shop now</a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-md-9"></div>
         </div>
       </div>
     </main>
     <footer>
       <div class="footer-top">
         <p>We’d love to hear what you think!</p>
-        <button>Give feedback</button>
+        <button class="btnWalmart">Give feedback</button>
       </div>
       <div class="footer-btm">
         <div class="links">
@@ -288,6 +324,7 @@
         <p>© 2023 Walmart. All Rights Reserved.</p>
       </div>
     </footer>
+     </div>
     <script>
       const sideNav = document.getElementById("sideNav");
       const backDrop = document.getElementById("backDrop");

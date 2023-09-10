@@ -8,7 +8,6 @@ fetch("https://dummyjson.com/products")
   .then((res) => res.json())
   .then((res) => {
     let products = res.products
-    console.log(products);
 for (let i = 0; i < carousels.length; i++) {
   products.forEach((product) => {
     let item = document.createElement("div");
@@ -92,3 +91,7 @@ mute.onclick = () => {
     mute.classList.add("fa-volume-low");
   }
 };
+
+
+// Haloween page 
+

@@ -20,6 +20,14 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+  overflow: hidden;
+}
+.mainContainer{
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-x: hidden;
 }
 * {
   box-sizing: border-box;
@@ -228,7 +236,7 @@ footer {
   display: none;
   position: absolute;
   background-color: white;
-  height: 100vh;
+  height: 100%;
   flex-direction: column;
   gap: 1rem;
   padding: 2rem 0 2rem 1.5rem;
@@ -254,6 +262,9 @@ a {
     margin-left: 0;
   }
 }
+.nav-side {
+  height: 100vh;
+}
 .nav-side .item {
   display: flex;
   align-items: center;
@@ -267,10 +278,12 @@ a {
   gap: 1rem;
   overflow: scroll;
   padding-right: 1rem;
+
   overflow-x: hidden;
 }
 .nav-side .item p {
   margin-top: 5px;
+
 }
 .nav-side .nav-list {
   display: flex;

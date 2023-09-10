@@ -265,13 +265,7 @@ a {
 .nav-side {
   height: 100vh;
 }
-.nav-side .item {
-  display: flex;
-  align-items: center;
-  margin: 5px 0;
-  font-size: 14px;
-  gap: 0.6rem;
-}
+/* item class moved to the bottom */
 .nav-side .items {
   display: flex;
   flex-direction: column;
@@ -391,7 +385,14 @@ i {
   gap: 1rem;
   z-index: 5;
 }
-
+.nav-side .item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 5px 0;
+  font-size: 14px;
+  gap: 0.6rem;
+}
 @media (max-width: 1024px) {
   .hide-md {
     display: none;

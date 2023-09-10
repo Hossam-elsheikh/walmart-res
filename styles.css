@@ -186,7 +186,7 @@ footer {
   background-color: #e6f1fc;
   padding: 2rem;
 }
-.footer-top button {
+.btnWalmart {
   margin-top: 1rem;
   padding: 12px 25px 8px;
   border: 1px solid black;
@@ -243,8 +243,8 @@ main {
   max-width: 100vw;
 }
 
-a{
-    color: black;
+a {
+  color: black;
 }
 @keyframes slide {
   0% {
@@ -297,14 +297,13 @@ i {
 }
 .item {
   position: relative;
-  
 }
-.item .img{
-    width: 200px;
-    height: 150px;
+.item .img {
+  width: 200px;
+  height: 150px;
 }
-.item .img img{
-     max-width: 100%;
+.item .img img {
+  max-width: 100%;
   height: 70%;
 }
 .item p {

@@ -427,3 +427,38 @@ i {
     display: none;
   }
 }
+
+.Mybadge{
+  position: absolute;
+  top: 110px;
+  left: 10px;
+  color: white;
+  background-color: #0071dc;
+  padding: 10px;
+  border-radius: 60%;
+  text-align: center;
+}
+.Myicon{
+ position: absolute;
+  top: 0px;
+  left: 90px;
+  font-size: 30px;
+  background-color:white;
+  border-radius: 50%;
+}
+.Myicon:hover{
+  color: red;
+}
+.shipping{
+  background-color: #deecfa;
+  color:#0b84f4;
+  font-size: 12px;
+}
+.Myoffer{
+  color: rgb(154, 155, 155);
+  text-decoration-line: line-through;
+}
+.rounded-pill:hover{
+  background-color: black;
+  color: white;
+}

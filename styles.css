@@ -475,3 +475,8 @@ i {
   background-color: black;
   color: white;
 }
+@media screen and (max-width:556px){
+   .myquary { 
+    font-size: 10px;
+    } 
+}

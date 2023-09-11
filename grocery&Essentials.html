@@ -225,15 +225,17 @@
 
    
     <main>
-        <div class="container">    
-                <div class="col-lg-12 col-md-12 col-sm-12 position-relative mt-5">
+        <div class="container">  
+            <div class="row">  
+                <div class="col-lg-12 position-relative mt-5">
                     <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-9905/k2-_44f130ee-f212-4de0-8470-40cf5c76e476.v1.jpg"
-                        class="w-100 h-100">
-                        <div class="position-absolute top-50 start-50 translate-middle" style="text-align: center;">
+                        class="w-100">
+                        <div class="position-absolute top-50 start-50 translate-middle text-center myquary">
                             <br><br>
-                            <p class="fw-bold h3">Express delivery until 10pm!
+                            <p class="fw-bold h3 ">Express delivery until 10pm!
                             <br><span class="h5">everything you need—even later.</span></p>
                             <a href="#" >Book a timeslot</a>
+                        </div>
                         </div>
                </div>
             <div class="m-5">
@@ -1648,7 +1650,7 @@
                         <hr class="mb-5">
                         <div class="row">
                         <div class="col-lg-9 col-md-12 col-sm-12 h-100 w-100 mt-5">
-                            <div class="ms-5 me-5 position-relative">
+                            <div class="ms-5 me-5 position-relative myquary">
                                 <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-d036/k2-_950f7f8f-3605-4b07-b574-14abbcd8453a.v1.jpg" class="w-100 h-100">
                                 <div class="position-absolute top-50 start-50 translate-middle " style="text-align: center;">
                                     <p class="h4 fw-bold">Up to 65% off
@@ -1700,6 +1702,19 @@
     <script>
         let btn = document.getElementsByClassName("btn");
         let ul = document.getElementsByClassName("c");
+        let arr = document.getElementsByClassName("fa-chevron-down");
+        for (let i = 0; i < arr.length; i++) {
+            arr[i].addEventListener("click", function () {
+                if(this.classList.contains("fa-chevron-down")){
+                this.classList.remove('fa-chevron-down');
+                this.classList.add('fa-chevron-up');
+                }
+                else if(this.classList.contains("fa-chevron-up")){
+                    this.classList.remove('fa-chevron-up');
+                    this.classList.add('fa-chevron-down');
+                }
+            });
+        }
         for (let i = 0; i < btn.length; i++) {
             btn[i].addEventListener("click", function () {
                 if (ul[i].style.display === "none" || ul[i].style.display === "") {
@@ -1709,6 +1724,7 @@
                 }
             });
         }
+        
         const sideNav = document.getElementById('sideNav');
         const backDrop = document.getElementById('backDrop');
         function showSideNav() {
